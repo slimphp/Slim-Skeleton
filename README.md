@@ -14,7 +14,7 @@ If you have not installed Composer, do that now. I prefer to install Composer gl
 
 After you install Composer, run this command from the directory in which you want to install your new Slim Framework application.
 
-    php composer.phar create-project slim/skeleton [my-app-name]
+    php composer.phar create-project slim/slim-skeleton [my-app-name]
 
 Replace <code>[my-app-name]</code> with the desired directory name for your new application. You'll want to point your virtual host document root to your new application's `public/` directory.
 
