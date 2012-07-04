@@ -1,6 +1,6 @@
 # Slim Framework Skeleton Application
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework applciation. This application uses the latest Slim and Slim-Extras repositories. It also uses Sensio Labs' [Twig](http://twig.sensiolabs.org) template library.
+Use this skeleton application to quickly setup and start working on a new Slim Framework application. This application uses the latest Slim and Slim-Extras repositories. It also uses Sensio Labs' [Twig](http://twig.sensiolabs.org) template library.
 
 This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
 
