@@ -1,5 +1,5 @@
 {
-    "name": "slim/slim-skeleton",
+    "name": "slim/skeleton",
     "description": "A Slim Framework skeleton application for rapid development",
     "keywords": ["microframework","rest","router"],
     "homepage": "http://github.com/codeguy/Slim-Skeleton",
