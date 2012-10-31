@@ -4,7 +4,7 @@ require '../vendor/autoload.php';
 // Prepare app
 $app = new \Slim\Slim(array(
     'templates.path' => '../templates',
-    'log.level' => 4,
+    'log.level' => \Slim\Log::DEBUG,
     'log.enabled' => true,
     'log.writer' => new \Slim\Extras\Log\DateTimeFileWriter(array(
         'path' => '../logs',
