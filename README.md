@@ -16,7 +16,9 @@ After you install Composer, run this command from the directory in which you wan
 
     php composer.phar create-project slim/slim-skeleton [my-app-name]
 
-Replace <code>[my-app-name]</code> with the desired directory name for your new application. You'll want to point your virtual host document root to your new application's `public/` directory.
+Replace <code>[my-app-name]</code> with the desired directory name for your new application. You'll want to:
+* Point your virtual host document root to your new application's `public/` directory.
+* Ensure `logs/` and `templates/cache` are web writeable.
 
 That's it! Now go build something cool.
 
