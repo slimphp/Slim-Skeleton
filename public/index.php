@@ -11,6 +11,8 @@ $app = new \Slim\Slim(array(
 $app->container->singleton('log', function () {
     $log = new \Monolog\Logger('slim-skeleton');
     $log->pushHandler(new \Monolog\Handler\StreamHandler('../logs/app.log', \Psr\Log\LogLevel::DEBUG));
+    $env = $c['environment'];
+    $env['slim.log'] = $log;
     return $log;
 });
 
