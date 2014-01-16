@@ -3,7 +3,7 @@ require '../vendor/autoload.php';
 
 // Prepare app
 $app = new \Slim\Slim(array(
-    'templates.path' => '../templates',
+    'templates.path' => '../application/views',
 ));
 
 // Create monolog logger and store logger in container as singleton 
@@ -18,7 +18,7 @@ $app->container->singleton('log', function () {
 $app->view(new \Slim\Views\Twig());
 $app->view->parserOptions = array(
     'charset' => 'utf-8',
-    'cache' => realpath('../templates/cache'),
+    'cache' => realpath('../application/views/cache'),
     'auto_reload' => true,
     'strict_variables' => false,
     'autoescape' => true
@@ -33,5 +33,6 @@ $app->get('/', function () use ($app) {
     $app->render('index.html');
 });
 
+// $app->get('/hello/:name', 'Greeting:sayHello');
 // Run app
 $app->run();
