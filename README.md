@@ -1,7 +1,14 @@
-Skeleton based on [PHP-MVC PROJECT](http://www.php-mvc.net/) 
+My Slim Framework Skeleton based on [PHP-MVC PROJECT](http://www.php-mvc.net/)
+
 install with: php composer.phar create-project seromenho/slim-skeleton [my-app-name]
 
+
+
+
+
+
 Original README.md from the forked project:
+
 # Slim Framework Skeleton Application
 
 Use this skeleton application to quickly setup and start working on a new Slim Framework application. This application uses the latest Slim and Slim-Views repositories. It also uses Sensio Labs' [Twig](http://twig.sensiolabs.org) template library.
