@@ -1,6 +1,6 @@
 {
     "name": "seromenho/slim-skeleton",
-    "description": "A Slim Framework skeleton application for rapid development",
+    "description": "A PHP-MVC Slim Framework skeleton application for rapid development",
     "keywords": ["microframework","rest","router"],
     "homepage": "http://github.com/seromenho/Slim-Skeleton",
     "authors": [
