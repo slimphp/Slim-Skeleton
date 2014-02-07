@@ -1,6 +1,8 @@
 #Skeleton based on [PHP-MVC PROJECT](http://www.php-mvc.net/) 
+php composer.phar create-project seromenho/slim-skeleton [my-app-name]
+----
 
-
+Original README.md from the forked project:
 
 # Slim Framework Skeleton Application
 
