@@ -1,14 +1,13 @@
 {
-    "name": "slim/slim-skeleton",
-    "description": "A Slim Framework skeleton application for rapid development",
+    "name": "seromenho/slim-skeleton",
+    "description": "A PHP-MVC Slim Framework skeleton application for rapid development",
     "keywords": ["microframework","rest","router"],
-    "homepage": "http://github.com/codeguy/Slim-Skeleton",
-    "license": "MIT",
+    "homepage": "http://github.com/seromenho/Slim-Skeleton",
     "authors": [
         {
-            "name": "Josh Lockhart",
-            "email": "info@joshlockhart.com",
-            "homepage": "http://www.joshlockhart.com/"
+            "name": "Ricardo Seromenho",
+            "email": "ricardo@seromenho.com",
+            "homepage": "http://www.seromenho.com/"
         }
     ],
     "require": {

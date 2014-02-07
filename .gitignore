@@ -1,7 +1,7 @@
 /vendor/
 /logs/*
 !/logs/README.md
-/templates/cache/*
-!/templates/cache/README.md
+/application/views/cache/*
+!/application/views/cache/README.md
 .DS_STORE
 composer.lock
