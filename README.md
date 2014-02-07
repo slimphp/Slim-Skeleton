@@ -1,8 +1,7 @@
 My Slim Framework Skeleton based on [PHP-MVC PROJECT](http://www.php-mvc.net/)
 
-install with: php composer.phar create-project seromenho/slim-skeleton [my-app-name]
-
-
+If you have installed composer globally use:
+	composer create-project seromenho/slim-skeleton [my-app-name]
 
 
 
