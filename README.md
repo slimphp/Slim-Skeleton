@@ -1,4 +1,4 @@
-#Skeleton based on [PHP-MVC PROJECT](http://www.php-mvc.net/) 
+Skeleton based on [PHP-MVC PROJECT](http://www.php-mvc.net/) 
 php composer.phar create-project seromenho/slim-skeleton [my-app-name]
 ----
 
