@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<title>Slim Skeleton</title>
+
+		{% block css %}
+		    <link rel="stylesheet" href="/css/screen.css">
+		    <link rel="stylesheet" href="/css/print.css" media="print">
+		{% endblock %}
+
+		{% block js %}
+		    <script src="/js/scripts.js"></script>
+		{% endblock %}
+
+	</head>
+	<body>
+		
+		<main>
+			<header>
+				<nav></nav>
+			</header>
+
+			<aside></aside>
+
+			<section>
+
+			{% block section %}
+
+				<article></article>				
+				<article></article>
+
+			{% endblock %}				
+
+			</section>
+			
+			<footer></footer>
+		</main>
+
+		{% block js_bottom %}
+		{% endblock %}
+
+	</body>
+</html>
