@@ -1,14 +1,13 @@
 {
-    "name": "slim/slim-skeleton",
+    "name": "gilglecio/slim-skeleton",
     "description": "A Slim Framework skeleton application for rapid development",
     "keywords": ["microframework","rest","router"],
-    "homepage": "http://github.com/codeguy/Slim-Skeleton",
+    "homepage": "http://github.com/gilglecioCom/Slim-Skeleton",
     "license": "MIT",
     "authors": [
         {
-            "name": "Josh Lockhart",
-            "email": "info@joshlockhart.com",
-            "homepage": "http://www.joshlockhart.com/"
+            "name": "Gilglécio Santos",
+            "email": "gilglecio_dev@hotmail.com"
         }
     ],
     "require": {
