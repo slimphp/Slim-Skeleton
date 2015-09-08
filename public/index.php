@@ -6,7 +6,25 @@ $app = new \Slim\Slim(array(
     'templates.path' => '../templates',
 ));
 
-// Create monolog logger and store logger in container as singleton 
+// Create database connection and store as singleton
+$app->container->singleton('db', function () {
+    $capsule = new \Illuminate\Database\Capsule\Manager;
+    $capsule->addConnection([
+        'driver' => 'mysql',
+        'host' => 'localhost',
+        'database' => '',
+        'username' => '',
+        'password' => '',
+        'charset' => 'utf8',
+        'collation' => 'utf8_unicode_ci',
+        'prefix' => '',
+    ]);
+    $capsule->setAsGlobal();
+    $capsule->bootEloquent();
+    return $capsule;
+});
+
+// Create monolog logger and store logger in container as singleton
 // (Singleton resources retrieve the same log resource definition each time)
 $app->container->singleton('log', function () {
     $log = new \Monolog\Logger('slim-skeleton');
