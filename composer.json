@@ -1,8 +1,8 @@
 {
     "name": "slim/slim-skeleton",
     "description": "A Slim Framework skeleton application for rapid development",
-    "keywords": ["microframework","rest","router"],
-    "homepage": "http://github.com/codeguy/Slim-Skeleton",
+    "keywords": ["microframework","rest","router", "psr7"],
+    "homepage": "http://github.com/slimphp/Slim-Skeleton",
     "license": "MIT",
     "authors": [
         {
@@ -12,10 +12,9 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0",
-        "monolog/monolog": "1.*",
-        "slim/slim": "2.*",
-        "slim/views": "0.*",
-        "twig/twig": "1.*"
+        "php": ">=5.5.0",
+        "slim/slim": "~3.0",
+        "slim/php-view": "^2.0",
+        "monolog/monolog": "^1.17"
     }
 }
