@@ -37,6 +37,7 @@ class BaseTestCase extends \PHPUnit_Framework_TestCase
         // Set up a request object based on the environment
         $request = Request::createFromEnvironment($environment);
 
+        // Add request data, if it exists
         if (isset($requestData)) {
             $request = $request->withParsedBody($requestData);
         }
