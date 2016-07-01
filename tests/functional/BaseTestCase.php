@@ -2,6 +2,11 @@
 
 namespace Tests\Functional;
 
+use Slim\App;
+use Slim\Http\Request;
+use Slim\Http\Response;
+use Slim\Http\Environment;
+
 class BaseTestCase extends \PHPUnit_Framework_TestCase
 {
     /**
@@ -22,7 +27,7 @@ class BaseTestCase extends \PHPUnit_Framework_TestCase
     public function runApp($requestMethod, $requestUri, $requestData = null)
     {
         // Create a mock environment for testing with
-        $environment = \Slim\Http\Environment::mock(
+        $environment = Environment::mock(
             [
                 'REQUEST_METHOD' => $requestMethod,
                 'REQUEST_URI' => $requestUri
@@ -30,20 +35,20 @@ class BaseTestCase extends \PHPUnit_Framework_TestCase
         );
 
         // Set up a request object based on the environment
-        $request = \Slim\Http\Request::createFromEnvironment($environment);
+        $request = Request::createFromEnvironment($environment);
 
         if (isset($requestData)) {
             $request = $request->withParsedBody($requestData);
         }
 
         // Set up a response object
-        $response = new \Slim\Http\Response();
+        $response = new Response();
 
         // Use the application settings
         $settings = require __DIR__ . '/../../src/settings.php';
 
         // Instantiate the application
-        $app = new \Slim\App($settings);
+        $app = new App($settings);
 
         // Set up dependencies
         require __DIR__ . '/../../src/dependencies.php';
