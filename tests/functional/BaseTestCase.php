@@ -55,7 +55,7 @@ class BaseTestCase extends \PHPUnit_Framework_TestCase
         $settings = require __DIR__ . '/../../src/settings.php';
 
         // Instantiate the application
-        $app = new App($settings);
+        $app = new App(['settings' => $settings]);
 
         // Set up dependencies
         require __DIR__ . '/../../src/dependencies.php';
