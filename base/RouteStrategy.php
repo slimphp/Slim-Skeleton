@@ -42,7 +42,7 @@ class RouteStrategy implements InvocationStrategyInterface {
   }
 
   // 요청방법,기본값을 고려한 파라메터
-  private function getParams($request, $defaults=[]) {
+  private function getParams($request) {
 
     $query = is_array($request->getQueryParams()) ? $request->getQueryParams() : [];
     $body = is_array($request->getParsedBody()) ? $request->getParsedBody() : [];
@@ -54,11 +54,6 @@ class RouteStrategy implements InvocationStrategyInterface {
 
     foreach($data as $key=>$val) {
       if (!is_array($val)) $data[$key] = $this->juggleNumber($data[$key]);
-    }
-
-    foreach($defaults as $key=>$val) {
-      if ( $val===false && !isset($data[$key]) ) throw new Exception($key.' 파라메터가 필요합니다.');
-      else if (!isset($data[$key])) $data[$key] = $val;
     }
 
     return $data;
