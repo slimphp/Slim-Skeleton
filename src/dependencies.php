@@ -18,4 +18,12 @@ $container['logger'] = function ($c) {
     return $logger;
 };
 
+// Custom RouteStrategy
+require __DIR__ . '/../base/RouteStrategy.php';
+$container['foundHandler'] = function() {
+  return new \base\RouteStrategy();
+};
+
+
+
 $container['util'] = function ($c) { return new Util($c); };
