@@ -15,7 +15,8 @@ if (PHP_SAPI == 'cli-server') {
 
 require __DIR__ . '/../vendor/autoload.php';
 spl_autoload_register(function ($classname) {
-    require ("../classes/" . $classname . ".php");
+  if (strpos($classname, 'Base')!==false) require ("../base/".$classname.".php");
+  else require ("../classes/".$classname.".php");
 });
 
 session_start();
