@@ -2,3 +2,6 @@
 /logs/*
 !/logs/README.md
 composer.lock
+
+# db connect info
+config.php
