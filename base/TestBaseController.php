@@ -13,7 +13,7 @@ class TestBaseController {
 
       throw new Exception('error');
 
-      return $response->withJson($params, 200, JSON_UNESCAPED_UNICODE);
+    throw new Exception("[Hello] Error Processing Request", 450);
 
     } catch (Exception $e) {
       return $response->withStatus($e->getCode())->write($e->getMessage());

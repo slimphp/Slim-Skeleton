@@ -3,6 +3,24 @@
 
 $container = $app->getContainer();
 
+if ($_SERVER['HTTP_ENV']=='prod') {
+  $container['errorHandler'] = function ($c) {
+    return function ($request, $response, $exception) use ($c) {
+      $code = $exception->getCode();
+      $code = ($code>=400 && $code<600) ? $code : 500 ;
+      $message = $exception->getMessage();
+      if ($message[0]=='[') {
+        $arr = explode(']', $message);
+        $reasonPhrase = substr($arr[0], 1);
+        $message = trim($arr[1]);
+      }
+      return $c['response']
+        ->withStatus($code, $reasonPhrase ?? 'Error')
+        ->write($message);
+    };
+  };
+}
+
 // view renderer
 $container['renderer'] = function ($c) {
     $settings = $c->get('settings')['renderer'];
