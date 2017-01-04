@@ -1,3 +1,3 @@
 <?php
 
-$app->get('/{name}', '\TestBaseController:test');
+$app->get('/', '\TestBaseController:test');

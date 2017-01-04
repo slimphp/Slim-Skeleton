@@ -9,15 +9,19 @@ class TestBaseController {
   }
 
   public function test($params, $response) {
-    try {
 
-      throw new Exception('error');
+    //return $response->withJson($_SERVER, 200, JSON_UNESCAPED_UNICODE);
 
     throw new Exception("[Hello] Error Processing Request", 450);
 
-    } catch (Exception $e) {
-      return $response->withStatus($e->getCode())->write($e->getMessage());
-    }
+
+    $stmt = $this->ci->addb->prepare('
+      SELECT * FROM ad101db.withdraws WHERE idx > 90;
+    ');
+    $stmt->execute([]);
+    $rows = $stmt->fetchAll();
+
+    return $response->withJson($rows, 200, JSON_UNESCAPED_UNICODE);
   }
 
 }

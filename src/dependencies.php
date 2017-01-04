@@ -1,4 +1,9 @@
 <?php
+
+// $CONFIG: db config
+require __DIR__ . '/../config.php';
+
+
 // DIC configuration
 
 $container = $app->getContainer();
@@ -41,6 +46,23 @@ require __DIR__ . '/../base/RouteStrategy.php';
 $container['foundHandler'] = function() {
   return new \base\RouteStrategy();
 };
+
+
+// Db connection
+foreach($CONFIG['rds'] as $name => $info) {
+  $container[$name] = function ($c) use ($info) {
+    $pdo = new PDO(
+      "{$info['type']}:host={$info['host']}"
+      .";charset=utf8",
+      $info['user'],
+      $info['pass']
+    );
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+    $pdo->setAttribute( PDO::ATTR_EMULATE_PREPARES, false );
+    return $pdo;
+  };
+}
 
 
 
