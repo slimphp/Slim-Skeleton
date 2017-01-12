@@ -110,6 +110,17 @@ class SimpleRds {
     return $stmt->execute($binds);
   }
 
+  public function delete($table, $condition, $limit=1) {
+
+    list($where, $binds) = $this->getCondition($condition);
+
+    $query = "DELETE FROM {$table} WHERE {$where} LIMIT {$limit}";
+
+    $stmt = $this->pdo->prepare($query);
+    $stmt->execute($binds);
+
+  }
+
   public function listToArray($rows, $col) {
     $list = [];
     foreach($rows as $row) $list[] = $row[$col];
