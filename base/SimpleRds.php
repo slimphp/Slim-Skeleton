@@ -53,11 +53,10 @@ class SimpleRds {
     $rows = $this->fetchAllWithJson($stmt);
     return $rows[0];
   }
-  public function fetchAll($db, $query, $binds) {
-    $stmt = $this->getDb($db)->prepare($query);
+  public function fetchAll($query, $binds) {
+    $stmt = $this->pdo->prepare($query);
     $stmt->execute($binds);
-    $rows = $this->fetchAllWithJson($stmt, false);
-    return $rows;
+    return $stmt->fetchAll();
   }
 
   public function insert($db, $table, $list) {
