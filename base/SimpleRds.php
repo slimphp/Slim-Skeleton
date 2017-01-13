@@ -47,11 +47,10 @@ class SimpleRds {
     return [ 'totalCount'=>(int) $totalCount, 'items'=>$items ];
   }
 
-  public function fetch($db, $query, $binds) {
-    $stmt = $this->getDb($db)->prepare($query);
+  public function fetch($query, $binds) {
+    $stmt = $this->pdo->prepare($query);
     $stmt->execute($binds);
-    $rows = $this->fetchAllWithJson($stmt);
-    return $rows[0];
+    return $stmt->fetch();
   }
   public function fetchAll($query, $binds) {
     $stmt = $this->pdo->prepare($query);
