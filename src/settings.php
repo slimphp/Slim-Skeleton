@@ -3,7 +3,7 @@ return [
     'settings' => [
 
         // Error Handling
-        'displayErrorDetails' => ($_SERVER['HTTP_ENV']=='test'),
+        'displayErrorDetails' => ($_SERVER['HTTP_ENV']=='dev'),
 
         // Allow the web server to send the content-length header
         'addContentLengthHeader' => false,
