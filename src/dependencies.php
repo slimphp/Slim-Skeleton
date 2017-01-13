@@ -51,9 +51,14 @@ $container['foundHandler'] = function() {
 // Db connection
 foreach($CONFIG['rds'] as $name => $info) {
   $container[$name] = function ($c) use ($info) {
+
+    $dsn = [];
+    foreach ($info['dsn'] as $key => $val) {
+      $dsn[] = "{$key}={$val}";
+    }
+
     $pdo = new PDO(
-      "{$info['type']}:host={$info['host']}"
-      .";charset=utf8",
+      $info['type'] .':'. implode(';', $dsn),
       $info['user'],
       $info['pass']
     );
