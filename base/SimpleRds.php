@@ -86,7 +86,7 @@ class SimpleRds {
     ];
   }
 
-  public function update($db, $table, $data, $condition) {
+  public function update($table, $data, $condition) {
 
     $binds = [];
     $set = [];
@@ -102,7 +102,7 @@ class SimpleRds {
       $binds = $this->bindValue($binds, $val);
     }
 
-    $stmt = $this->getDb($db)->prepare("
+    $stmt = $this->pdo->prepare("
       UPDATE ".$this->escapeTableName($table)."
       SET ".implode(', ', $set)."
       WHERE ".implode(' AND ', $where)."

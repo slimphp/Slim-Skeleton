@@ -21,14 +21,26 @@ class TestBaseController {
 
 
 
-    $rows = $db->paging([
-      'query' => "SELECT %% FROM books.도서",
-      'select' => '*',
-      'binds' => [],
-      'limit' => 2,
-      'offset' => 0,
-      'orderby' => 'id DESC'
+    // $rows = $db->paging([
+    //   'query' => "SELECT %% FROM books.도서",
+    //   'select' => '*',
+    //   'binds' => [],
+    //   'limit' => 2,
+    //   'offset' => 0,
+    //   'orderby' => 'id DESC'
+    // ]);
+
+    $db->update('books.도서', [
+      'author' => '홍길동'
+    ], [
+      'id' => 6
     ]);
+
+    $rows = $db->fetchAll('
+      SELECT * FROM books.도서 WHERE id = ?
+    ', [ 6 ]);
+
+
 
     return $response->withJson($rows, 200, JSON_UNESCAPED_UNICODE);
 
