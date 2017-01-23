@@ -48,18 +48,18 @@ class SimpleRds {
     $stmt->execute($binds);
   }
 
-  public function fetchAll($query, $binds) {
+  public function fetchAll($query, $binds=[]) {
     $stmt = $this->pdo->prepare($query);
     $stmt->execute($binds);
     return $stmt->fetchAll();
   }
 
-  public function fetch($query, $binds) {
+  public function fetch($query, $binds=[]) {
     $rows = $this->fetchAll($query, $binds);
     return $rows[0];
   }
 
-  public function count($query, $binds) {
+  public function count($query, $binds=[]) {
     $row = $this->fetch($query, $binds);
     return (int)$row['count'];
   }
@@ -86,7 +86,7 @@ class SimpleRds {
     ];
   }
 
-  public function update($table, $data, $condition) {
+  public function update($table, $data, $condition, $limit=1) {
 
     $binds = [];
     $set = [];
@@ -106,6 +106,7 @@ class SimpleRds {
       UPDATE ".$this->escapeTableName($table)."
       SET ".implode(', ', $set)."
       WHERE ".implode(' AND ', $where)."
+      LIMIT {$limit}
     ");
     return $stmt->execute($binds);
   }
