@@ -124,23 +124,17 @@ class SimpleRds {
       DELETE FROM {$table}
       WHERE ".implode(' AND ', $where)."
     ";
-    
+
     $stmt = $this->pdo->prepare($query);
     $stmt->execute($binds);
 
   }
 
-  public function listToArray($rows, $col) {
-    $list = [];
-    foreach($rows as $row) $list[] = $row[$col];
-    return $list;
-  }
-  public function listToInQuery($rows, $col) {
-    $array = $this->listToArray($rows, $col);
-    return $this->arrayToInQuery($array);
-  }
   public function arrayToInQuery($array) {
-    return "'". implode("','", $array) ."'";
+    foreach($array as &$item) {
+      if (!is_numeric($item)) $item = "'" . $item . "'";
+    }
+    return '('.implode(",", $array).')';
   }
 
 }
