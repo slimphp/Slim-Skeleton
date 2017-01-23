@@ -3,7 +3,7 @@ return [
     'settings' => [
 
         // Error Handling
-        'displayErrorDetails' => ($_SERVER['HTTP_STAGE']=='dev'),
+        'displayErrorDetails' => ($stage=='dev'),
 
         // Allow the web server to send the content-length header
         'addContentLengthHeader' => false,

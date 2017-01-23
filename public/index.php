@@ -21,6 +21,10 @@ spl_autoload_register(function ($classname) {
 
 session_start();
 
+
+$stage = $_SERVER['HTTP_STAGE'] ?? 'dev';
+
+
 // Instantiate the app
 $settings = require __DIR__ . '/../src/settings.php';
 $app = new \Slim\App($settings);

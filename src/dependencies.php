@@ -8,7 +8,8 @@ require __DIR__ . '/../config.php';
 
 $container = $app->getContainer();
 
-if (!$_SERVER['HTTP_STAGE']) {
+
+if ($stage=='prod') {
   $container['errorHandler'] = function ($c) {
     return function ($request, $response, $exception) use ($c) {
       $code = $exception->getCode();
@@ -49,7 +50,11 @@ $container['foundHandler'] = function() {
 
 
 // Db connection
-foreach($CONFIG['rds'] as $name => $info) {
+foreach($CONFIG['rds'] as $name => $data) {
+
+  if ($stage=='dev') $info = $data[$stage];
+  else $info = array_merge($data['dev'], $data[$stage]);
+
   $container[$name] = function ($c) use ($info) {
 
     $dsn = [];
