@@ -30,18 +30,21 @@ class TestBaseController {
     //   'orderby' => 'id DESC'
     // ]);
 
-    $db->update('books.도서', [
-      'author' => '홍길동'
-    ], [
-      'id' => 6
-    ]);
+    // $db->update('books.도서', [
+    //   'author' => '홍길동'
+    // ], [
+    //   'id' => 6
+    // ]);
+    //
+    // $rows = $db->fetchAll('
+    //   SELECT * FROM books.도서 WHERE id = ?
+    // ', [ 6 ]);
 
-    $rows = $db->fetchAll('
-      SELECT * FROM books.도서 WHERE id = ?
-    ', [ 6 ]);
 
+    $rows = $db->delete('books.도서', [ 'id' => 4 ]);
+    // return $rows;
 
-
+    $rows = $db->fetchAll("SELECT * FROM books.도서", []);
     return $response->withJson($rows, 200, JSON_UNESCAPED_UNICODE);
 
   }

@@ -86,11 +86,11 @@ class SimpleRds {
     ];
   }
 
-  public function update($table, $data, $condition, $limit=1) {
+  public function update($table, $data, $condition) {
 
+    $where = [];
     $binds = [];
     $set = [];
-    $where = [];
 
     foreach($data as $key=>$val) {
       $set[] = "\"{$key}\" = ?";
@@ -106,17 +106,25 @@ class SimpleRds {
       UPDATE ".$this->escapeTableName($table)."
       SET ".implode(', ', $set)."
       WHERE ".implode(' AND ', $where)."
-      LIMIT {$limit}
     ");
     return $stmt->execute($binds);
   }
 
-  public function delete($table, $condition, $limit=1) {
+  public function delete($table, $condition) {
 
-    list($where, $binds) = $this->getCondition($condition);
+    $where = [];
+    $binds = [];
 
-    $query = "DELETE FROM {$table} WHERE {$where} LIMIT {$limit}";
+    foreach($condition as $key=>$val) {
+      $where[] = "\"{$key}\" = ?";
+      $binds = $this->bindValue($binds, $val);
+    }
 
+    $query = "
+      DELETE FROM {$table}
+      WHERE ".implode(' AND ', $where)."
+    ";
+    
     $stmt = $this->pdo->prepare($query);
     $stmt->execute($binds);
 
