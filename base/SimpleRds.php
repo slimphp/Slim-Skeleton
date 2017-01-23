@@ -25,7 +25,7 @@ class SimpleRds {
 
     $cols = [];
     foreach($list[0] as $col=>$val) $cols[] = $col;
-    
+
     $valsList = [];
     $binds = [];
 
@@ -48,47 +48,42 @@ class SimpleRds {
     $stmt->execute($binds);
   }
 
-  public function count($query, $binds) {
-    $stmt = $this->pdo->prepare($query);
-    $stmt->execute($binds);
-    $row = $stmt->fetch();
-    return $row[0];
-  }
-
-  public function fetch($query, $binds) {
-    $stmt = $this->pdo->prepare($query);
-    $stmt->execute($binds);
-    return $stmt->fetch();
-  }
   public function fetchAll($query, $binds) {
     $stmt = $this->pdo->prepare($query);
     $stmt->execute($binds);
     return $stmt->fetchAll();
   }
 
+  public function fetch($query, $binds) {
+    $rows = $this->fetchAll($query, $binds);
+    return $rows[0];
+  }
+
+  public function count($query, $binds) {
+    $row = $this->fetch($query, $binds);
+    return (int)$row['count'];
+  }
+
   public function paging($cmd) {
 
-    $db = $this->getDb($cmd['db']);
-
-    $countQuery = isset($cmd['countQuery']) ? $cmd['countQuery'] : $cmd['query'];
-    $totalCount = $this->count(
-      $cmd['db'],
+    $countQuery = $cmd['countQuery'] ?? $cmd['query'];
+    $total = $this->count(
       str_replace('%%', 'count(*)', $countQuery),
       $cmd['binds']
     );
 
-    $stmt = $db->prepare(
-      str_replace('%%', $cmd['select'], $cmd['query'])
-      .( isset($cmd['orderby']) ? ' ORDER BY '.$cmd['orderby'] : '' )
-      .' LIMIT :limit OFFSET :offset'
-    );
-    $cmd['binds']['limit'] = $cmd['limit'];
-    $cmd['binds']['offset'] = $cmd['offset'];
-    $stmt->execute($cmd['binds']);
-    $items = $this->fetchAllWithJson($stmt);
-    if ($items[0]===null) $items = [];
+    $newQuery = str_replace('%%', $cmd['select'], $cmd['query'])
+      .( $cmd['orderby'] ? ' ORDER BY '.$cmd['orderby'] : '' )
+      .' LIMIT ? OFFSET ?';
+    $newBinds = $cmd['binds'];
+    $newBinds[] = $cmd['limit'];
+    $newBinds[] = $cmd['offset'];
+    $items = $this->fetchAll($newQuery, $newBinds);
 
-    return [ 'totalCount'=>(int) $totalCount, 'items'=>$items ];
+    return [
+      'total' => $total,
+      'items' => $items
+    ];
   }
 
   public function update($db, $table, $data, $condition) {
