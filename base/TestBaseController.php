@@ -1,5 +1,7 @@
 <?php
 
+require __DIR__ . '/SimpleRds.php';
+
 class TestBaseController {
 
   protected $ci;
@@ -10,18 +12,13 @@ class TestBaseController {
 
   public function test($params, $response) {
 
-    //return $response->withJson($_SERVER, 200, JSON_UNESCAPED_UNICODE);
+    $db = new SimpleRds($this->ci->librarydb);
 
-    throw new Exception("[Hello] Error Processing Request", 450);
+    $db->insert('books.book', [
+      [ 'name' => '좋은책', 'author'=> '신사고', 'time' => date('c') ],
+      [ 'name' => '미래생활사전', 'author'=> '페이스 팝콘', 'time' => date('r') ],
+    ]);
 
-
-    $stmt = $this->ci->addb->prepare('
-      SELECT * FROM ad101db.withdraws WHERE idx > 90;
-    ');
-    $stmt->execute([]);
-    $rows = $stmt->fetchAll();
-
-    return $response->withJson($rows, 200, JSON_UNESCAPED_UNICODE);
   }
 
 }

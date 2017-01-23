@@ -8,18 +8,62 @@ class SimpleRds {
     $this->pdo = $pdo;
   }
 
+  private function escapeTableName($str) {
+    return '"'.str_replace('.', '"."', $str).'"';
+  }
 
-  public function count($db, $query, $binds=[]) {
+  private function bindValue($binds, $val) {
+    if (is_array($val)) $binds[] = json_encode($val, JSON_UNESCAPED_UNICODE);
+    else if ($val===true) $binds[] = 'true';
+    else if ($val===false) $binds[] = 'false';
+    else $binds[] = $val;
 
-    $stmt = $this->getDb($db)->prepare($query);
-    $stmt->execute($binds);
+    return $binds;
+  }
 
-    $count = 0;
-    while( $row = $stmt->fetch(PDO::FETCH_NUM) ) {
-      $count += $row[0];
+  public function insert($table, $list) {
+
+    $cols = [];
+    foreach($list[0] as $col=>$val) $cols[] = $col;
+    
+    $valsList = [];
+    $binds = [];
+
+    foreach($list as $data) {
+      $vals = [];
+      foreach($data as $col=>$val) {
+        $vals[] = '?';
+        $binds = $this->bindValue($binds, $val);
+      }
+      $valsList[] = '('.implode(",", $vals).')';
     }
 
-    return (int)$count;
+    $query = '
+      INSERT INTO '.$this->escapeTableName($table).'
+      ("'.implode('","', $cols).'")
+      VALUES '.implode(',',$valsList).'
+    ';
+
+    $stmt = $this->pdo->prepare($query);
+    $stmt->execute($binds);
+  }
+
+  public function count($query, $binds) {
+    $stmt = $this->pdo->prepare($query);
+    $stmt->execute($binds);
+    $row = $stmt->fetch();
+    return $row[0];
+  }
+
+  public function fetch($query, $binds) {
+    $stmt = $this->pdo->prepare($query);
+    $stmt->execute($binds);
+    return $stmt->fetch();
+  }
+  public function fetchAll($query, $binds) {
+    $stmt = $this->pdo->prepare($query);
+    $stmt->execute($binds);
+    return $stmt->fetchAll();
   }
 
   public function paging($cmd) {
@@ -45,43 +89,6 @@ class SimpleRds {
     if ($items[0]===null) $items = [];
 
     return [ 'totalCount'=>(int) $totalCount, 'items'=>$items ];
-  }
-
-  public function fetch($query, $binds) {
-    $stmt = $this->pdo->prepare($query);
-    $stmt->execute($binds);
-    return $stmt->fetch();
-  }
-  public function fetchAll($query, $binds) {
-    $stmt = $this->pdo->prepare($query);
-    $stmt->execute($binds);
-    return $stmt->fetchAll();
-  }
-
-  public function insert($db, $table, $list) {
-
-    $cols = [];
-    $valsList = [];
-    $binds = [];
-
-    foreach($list as $data) {
-      $vals = [];
-      foreach($data as $col=>$val) {
-        $cols[] = $col;
-        $vals[] = '?';
-        $binds = $this->bindValue($binds, $val);
-      }
-      $valsList[] = '('.implode(",", $vals).')';
-    }
-
-    $query = '
-      INSERT INTO '.$this->escapeTableName($table).'
-      ("'.implode('","', $cols).'")
-      VALUES '.implode(',',$valsList).'
-    ';
-    //return $binds;
-    $stmt = $this->getDb($db)->prepare($query);
-    $stmt->execute($binds);
   }
 
   public function update($db, $table, $data, $condition) {
