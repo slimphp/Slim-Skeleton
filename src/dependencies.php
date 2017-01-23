@@ -8,7 +8,7 @@ require __DIR__ . '/../config.php';
 
 $container = $app->getContainer();
 
-if ($_SERVER['HTTP_ENV']=='prod') {
+if (!$_SERVER['HTTP_ENV']) {
   $container['errorHandler'] = function ($c) {
     return function ($request, $response, $exception) use ($c) {
       $code = $exception->getCode();
