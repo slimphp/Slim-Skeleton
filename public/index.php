@@ -1,4 +1,8 @@
 <?php
+ini_set("display_errors", 1);
+date_default_timezone_set('Asia/Seoul');
+error_reporting(E_ALL & ~E_NOTICE);
+
 if (PHP_SAPI == 'cli-server') {
     // To help the built-in PHP dev server, check if the request was actually for
     // something which should probably be served as a static file
@@ -10,8 +14,18 @@ if (PHP_SAPI == 'cli-server') {
 }
 
 require __DIR__ . '/../vendor/autoload.php';
+spl_autoload_register(function ($classname) {
+  if (strpos($classname, 'Base')!==false) require ("../base/".$classname.".php");
+  else require ("../classes/".$classname.".php");
+});
 
 session_start();
+
+
+if (isset($_SERVER['HTTP_STAGE'])) $stage = $_SERVER['HTTP_STAGE'];
+else if (in_array($_SERVER['HTTP_HOST'], ['localhost'])) $stage = 'dev';
+else $stage = 'dev';
+
 
 // Instantiate the app
 $settings = require __DIR__ . '/../src/settings.php';
