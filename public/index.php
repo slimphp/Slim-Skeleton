@@ -22,7 +22,9 @@ spl_autoload_register(function ($classname) {
 session_start();
 
 
-$stage = $_SERVER['HTTP_STAGE'] ?? 'dev';
+if (isset($_SERVER['HTTP_STAGE'])) $stage = $_SERVER['HTTP_STAGE'];
+else if (in_array($_SERVER['HTTP_HOST'], ['localhost'])) $stage = 'dev';
+else $stage = 'dev';
 
 
 // Instantiate the app

@@ -43,11 +43,13 @@ class TestBaseController {
 
     // $rows = $db->delete('books.도서', [ 'id' => 4 ]);
 
+    return $response->withJson($_SERVER, 200, JSON_UNESCAPED_UNICODE);
+
+
     $rows = $db->fetchAll("
       SELECT * FROM books.도서
       WHERE author IN ".$db->arrayToInQuery(['신사고'])."
     ", [
-
     ]);
 
     return $response->withJson($rows, 200, JSON_UNESCAPED_UNICODE);
