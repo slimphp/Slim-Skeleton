@@ -43,7 +43,7 @@ class TestBaseController {
 
     // $rows = $db->delete('books.도서', [ 'id' => 4 ]);
 
-    return $response->withJson($_SERVER, 200, JSON_UNESCAPED_UNICODE);
+    return $response->withJson($this->ci->stage, 200, JSON_UNESCAPED_UNICODE);
 
 
     $rows = $db->fetchAll("

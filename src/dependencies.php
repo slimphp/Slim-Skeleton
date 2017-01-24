@@ -8,6 +8,8 @@ require __DIR__ . '/../config.php';
 
 $container = $app->getContainer();
 
+$container['stage'] = $stage;
+
 
 if ($stage=='prod') {
   $container['errorHandler'] = function ($c) {
