@@ -26,7 +26,10 @@
         }
     },
     "config": {
-        "process-timeout" : 0
+        "process-timeout" : 0,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
     },
     "scripts": {
         "start": "php -S 0.0.0.0:8080 -t public public/index.php",
