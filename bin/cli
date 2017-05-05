@@ -1,0 +1,29 @@
+#!/usr/bin/php
+<?php
+
+// Example:
+// ./bin/cli hello
+
+array_shift($argv); // Discard the filename
+$pathinfo = array_shift($argv);
+
+require __DIR__ . '/../vendor/autoload.php';
+
+$settings = require __DIR__ . '/../src/settings.php';
+$settings['environment'] = \Slim\Http\Environment::mock([
+  'REQUEST_URI' => "/".$pathinfo,
+]);
+$settings['notFoundHandler'] = function ($c) {
+  return function ($request, $response) use($c) {
+    $routes = implode("\n", array_map(function($route) {
+      return "\033[0;32m".ltrim($route->getPattern(), '/')."\t\t\t\t\033[0;37m".$route->getName();
+    }, $c['router']->getRoutes()));
+    return $c['response']->write("\033[0;33mAvailable tasks:\n\n".$routes."\n\033[0m");
+  };
+};
+$app = new \Slim\App($settings);
+
+// Register CLI tasks
+require __DIR__ . '/../src/tasks.php';
+
+$app->run();
