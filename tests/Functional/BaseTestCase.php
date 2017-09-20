@@ -28,7 +28,7 @@ class BaseTestCase extends \PHPUnit_Framework_TestCase
      * @param string $requestMethod the request method (e.g. GET, POST, etc.)
      * @param string $requestUri the request URI
      * @param array|object|null $requestData the request data
-     * @return \Slim\Http\Response
+     * @return \Psr\Http\Message\ResponseInterface
      */
     public function runApp($requestMethod, $requestUri, $requestData = null)
     {
