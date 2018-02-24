@@ -1,0 +1,1 @@
+Your `App` namespace with all PHP classes will be implemented here.
