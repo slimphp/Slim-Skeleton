@@ -26,7 +26,8 @@
         }
     },
     "config": {
-        "process-timeout" : 0
+        "process-timeout" : 0,
+        "sort-packages" : true
     },
     "scripts": {
         "start": "php -S localhost:8080 -t public",
