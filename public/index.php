@@ -18,13 +18,13 @@ $settings = require __DIR__ . '/../src/settings.php';
 $app = new \Slim\App($settings);
 
 // Set up dependencies
-require __DIR__ . '/../src/dependencies.php';
+App\Dependencies::init($app);
 
 // Register middleware
-require __DIR__ . '/../src/middleware.php';
+App\Middleware::init($app);
 
 // Register routes
-require __DIR__ . '/../src/routes.php';
+App\Routes::init($app);
 
 // Run app
 $app->run();
