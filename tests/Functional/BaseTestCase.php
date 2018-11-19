@@ -58,15 +58,18 @@ class BaseTestCase extends \PHPUnit_Framework_TestCase
         $app = new App($settings);
 
         // Set up dependencies
-        \App\Dependencies::init($app);
+        $dependencies = require __DIR__ . '/../../src/dependencies.php';
+        $dependencies($app);
 
         // Register middleware
         if ($this->withMiddleware) {
-            \App\Middleware::init($app);
+            $middleware = require __DIR__ . '/../../src/middleware.php';
+            $middleware($app);
         }
 
         // Register routes
-        \App\Routes::init($app);
+        $routes = require __DIR__ . '/../../src/routes.php';
+        $routes($app);
 
         // Process the application
         $response = $app->process($request, $response);
