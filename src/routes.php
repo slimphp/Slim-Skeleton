@@ -1,14 +1,17 @@
 <?php
 
+use Slim\App;
 use Slim\Http\Request;
 use Slim\Http\Response;
 
-// Routes
+return function (App $app) {
+    $container = $app->getContainer();
 
-$app->get('/[{name}]', function (Request $request, Response $response, array $args) {
-    // Sample log message
-    $this->logger->info("Slim-Skeleton '/' route");
+    $app->get('/[{name}]', function (Request $request, Response $response, array $args) use ($container) {
+        // Sample log message
+        $container->get('logger')->info("Slim-Skeleton '/' route");
 
-    // Render index view
-    return $this->renderer->render($response, 'index.phtml', $args);
-});
+        // Render index view
+        return $container->get('renderer')->render($response, 'index.phtml', $args);
+    });
+};

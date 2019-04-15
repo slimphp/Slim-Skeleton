@@ -59,15 +59,18 @@ class BaseTestCase extends TestCase
         $app = new App($settings);
 
         // Set up dependencies
-        require __DIR__ . '/../../src/dependencies.php';
+        $dependencies = require __DIR__ . '/../../src/dependencies.php';
+        $dependencies($app);
 
         // Register middleware
         if ($this->withMiddleware) {
-            require __DIR__ . '/../../src/middleware.php';
+            $middleware = require __DIR__ . '/../../src/middleware.php';
+            $middleware($app);
         }
 
         // Register routes
-        require __DIR__ . '/../../src/routes.php';
+        $routes = require __DIR__ . '/../../src/routes.php';
+        $routes($app);
 
         // Process the application
         $response = $app->process($request, $response);
