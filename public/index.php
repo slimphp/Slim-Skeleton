@@ -8,6 +8,8 @@ if (PHP_SAPI == 'cli-server') {
         return false;
     }
 }
+// dd debug
+require __DIR__ . '/../vendor/larapack/dd/src/helper.php';
 
 require __DIR__ . '/../vendor/autoload.php';
 
