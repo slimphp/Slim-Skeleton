@@ -18,6 +18,7 @@ $container = new Container();
 // Instantiate the app
 AppFactory::setContainer($container);
 $app = AppFactory::create();
+$callableResolver = $app->getCallableResolver();
 
 // Set up settings
 $settings = require __DIR__ . '/../app/settings.php';
@@ -48,7 +49,7 @@ $request = $serverRequestCreator->createServerRequestFromGlobals();
 
 // Create Error Handler
 $responseFactory = $app->getResponseFactory();
-$errorHandler = new HttpErrorHandler($responseFactory);
+$errorHandler = new HttpErrorHandler($callableResolver, $responseFactory);
 
 // Create Shutdown Handler
 $shutdownHandler = new ShutdownHandler($request, $errorHandler, $displayErrorDetails);
@@ -60,7 +61,6 @@ $routingMiddleware = new RoutingMiddleware($routeResolver);
 $app->add($routingMiddleware);
 
 // Add Error Middleware
-$callableResolver = $app->getCallableResolver();
 $errorMiddleware = new ErrorMiddleware($callableResolver, $responseFactory, $displayErrorDetails, false, false);
 $errorMiddleware->setDefaultErrorHandler($errorHandler);
 $app->add($errorMiddleware);
