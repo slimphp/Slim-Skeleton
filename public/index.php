@@ -7,8 +7,6 @@ use App\Application\ResponseEmitter\ResponseEmitter;
 use DI\Container;
 use Slim\Factory\AppFactory;
 use Slim\Factory\ServerRequestCreatorFactory;
-use Slim\Middleware\RoutingMiddleware;
-use Slim\Middleware\ErrorMiddleware;
 
 require __DIR__ . '/../vendor/autoload.php';
 
@@ -56,14 +54,11 @@ $shutdownHandler = new ShutdownHandler($request, $errorHandler, $displayErrorDet
 register_shutdown_function($shutdownHandler);
 
 // Add Routing Middleware
-$routeResolver = $app->getRouteResolver();
-$routingMiddleware = new RoutingMiddleware($routeResolver);
-$app->add($routingMiddleware);
+$app->addRoutingMiddleware();
 
 // Add Error Middleware
-$errorMiddleware = new ErrorMiddleware($callableResolver, $responseFactory, $displayErrorDetails, false, false);
+$errorMiddleware = $app->addErrorMiddleware($displayErrorDetails, false, false);
 $errorMiddleware->setDefaultErrorHandler($errorHandler);
-$app->add($errorMiddleware);
 
 // Run App & Emit Response
 $response = $app->handle($request);
