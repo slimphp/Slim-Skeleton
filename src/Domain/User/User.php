@@ -8,7 +8,7 @@ use JsonSerializable;
 class User implements JsonSerializable
 {
     /**
-     * @var int
+     * @var int|null
      */
     private $id;
 
@@ -28,12 +28,12 @@ class User implements JsonSerializable
     private $lastName;
 
     /**
-     * @param int       $id
+     * @param int|null  $id
      * @param string    $username
      * @param string    $firstName
      * @param string    $lastName
      */
-    public function __construct(int $id, string $username, string $firstName, string $lastName)
+    public function __construct(?int $id, string $username, string $firstName, string $lastName)
     {
         $this->id = $id;
         $this->username = $username;
