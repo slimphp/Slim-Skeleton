@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase as PHPUnit_TestCase;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\App;
 use Slim\Factory\AppFactory;
-use Slim\Psr7\Body;
+use Slim\Psr7\Factory\StreamFactory;
 use Slim\Psr7\Headers;
 use Slim\Psr7\Request as SlimRequest;
 use Slim\Psr7\Uri;
@@ -68,10 +68,14 @@ class TestCase extends PHPUnit_TestCase
         array $cookies = []
     ): Request {
         $uri = new Uri('', '', 80, $path);
-        $headers = Headers::createFromGlobals($headers);
         $handle = fopen('php://temp', 'w+');
-        $stream = new Body($handle);
+        $stream = (new StreamFactory())->createStreamFromResource($handle);
 
-        return new SlimRequest($method, $uri, $headers, $serverParams, $cookies, $stream);
+        $h = new Headers();
+        foreach ($headers as $name => $value) {
+            $h->addHeader($name, $value);
+        }
+
+        return new SlimRequest($method, $uri, $h, $serverParams, $cookies, $stream);
     }
 }
