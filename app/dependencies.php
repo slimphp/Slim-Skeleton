@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-use DI\Container;
 use DI\ContainerBuilder;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
 use Monolog\Processor\UidProcessor;
+use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
 
 return function (ContainerBuilder $containerBuilder) {
     $containerBuilder->addDefinitions([
-        LoggerInterface::class => function (Container $c) {
+        LoggerInterface::class => function (ContainerInterface $c) {
             $settings = $c->get('settings');
 
             $loggerSettings = $settings['logger'];
