@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use DI\Container;
+use DI\ContainerBuilder;
 use Exception;
 use PHPUnit\Framework\TestCase as PHPUnit_TestCase;
 use Psr\Http\Message\ServerRequestInterface as Request;
@@ -22,28 +22,33 @@ class TestCase extends PHPUnit_TestCase
      */
     protected function getAppInstance(): App
     {
-        // Instantiate PHP-DI Container
-        $container = new Container();
+        // Instantiate PHP-DI ContainerBuilder
+        $containerBuilder = new ContainerBuilder();
+
+        // Container intentionally not compiled for tests.
+
+        // Set up settings
+        $settings = require __DIR__ . '/../app/settings.php';
+        $settings($containerBuilder);
+
+        // Set up dependencies
+        $dependencies = require __DIR__ . '/../app/dependencies.php';
+        $dependencies($containerBuilder);
+
+        // Set up repositories
+        $repositories = require __DIR__ . '/../app/repositories.php';
+        $repositories($containerBuilder);
+
+        // Build PHP-DI Container instance
+        $container = $containerBuilder->build();
 
         // Instantiate the app
         AppFactory::setContainer($container);
         $app = AppFactory::create();
 
-        // Set up settings
-        $settings = require __DIR__ . '/../app/settings.php';
-        $settings($app);
-
-        // Set up dependencies
-        $dependencies = require __DIR__ . '/../app/dependencies.php';
-        $dependencies($app);
-
         // Register middleware
         $middleware = require __DIR__ . '/../app/middleware.php';
         $middleware($app);
-
-        // Set up repositories
-        $repositories = require __DIR__ . '/../app/repositories.php';
-        $repositories($app);
 
         // Register routes
         $routes = require __DIR__ . '/../app/routes.php';
