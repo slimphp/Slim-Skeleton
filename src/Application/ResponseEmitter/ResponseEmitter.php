@@ -25,7 +25,10 @@ class ResponseEmitter extends SlimResponseEmitter
             ->withAddedHeader('Cache-Control', 'post-check=0, pre-check=0')
             ->withHeader('Pragma', 'no-cache');
 
-        ob_clean();
+        if (ob_get_contents()) {
+            ob_clean();
+        }
+
         parent::emit($response);
     }
 }
