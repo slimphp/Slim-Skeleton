@@ -21,8 +21,8 @@
         "monolog/monolog": "^1.24",
         "php": ">=7.1",
         "php-di/php-di": "^6.0",
-        "slim/psr7": "dev-master",
-        "slim/slim": "^4"
+        "slim/psr7": "^0.5",
+        "slim/slim": "^4.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.5"
