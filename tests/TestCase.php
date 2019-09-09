@@ -81,6 +81,6 @@ class TestCase extends PHPUnit_TestCase
             $h->addHeader($name, $value);
         }
 
-        return new SlimRequest($method, $uri, $h, $serverParams, $cookies, $stream);
+        return new SlimRequest($method, $uri, $h, $cookies, $serverParams, $stream);
     }
 }
