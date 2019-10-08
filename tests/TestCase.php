@@ -61,16 +61,16 @@ class TestCase extends PHPUnit_TestCase
      * @param string $method
      * @param string $path
      * @param array  $headers
-     * @param array  $serverParams
      * @param array  $cookies
+     * @param array  $serverParams
      * @return Request
      */
     protected function createRequest(
         string $method,
         string $path,
         array $headers = ['HTTP_ACCEPT' => 'application/json'],
-        array $serverParams = [],
-        array $cookies = []
+        array $cookies = [],
+        array $serverParams = []
     ): Request {
         $uri = new Uri('', '', 80, $path);
         $handle = fopen('php://temp', 'w+');
