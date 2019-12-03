@@ -24,13 +24,6 @@ class ShutdownHandler
      */
     private $displayErrorDetails;
 
-    /**
-     * ShutdownHandler constructor.
-     *
-     * @param Request       $request
-     * @param $errorHandler $errorHandler
-     * @param bool          $displayErrorDetails
-     */
     public function __construct(
         Request $request,
         HttpErrorHandler $errorHandler,
@@ -41,10 +34,10 @@ class ShutdownHandler
         $this->displayErrorDetails = $displayErrorDetails;
     }
 
-    public function __invoke()
+    public function __invoke() : void
     {
         $error = error_get_last();
-        if ($error) {
+        if (is_array($error)) {
             $errorFile = $error['file'];
             $errorLine = $error['line'];
             $errorMessage = $error['message'];

@@ -22,14 +22,17 @@
         }
     ],
     "require": {
+        "php": ">=7.1",
         "ext-json": "*",
         "monolog/monolog": "^1.24",
-        "php": ">=7.1",
         "php-di/php-di": "^6.0",
         "slim/psr7": "^0.5",
         "slim/slim": "^4.1"
     },
     "require-dev": {
+        "phpstan/phpstan": "@stable",
+        "phpstan/phpstan-deprecation-rules": "@stable",
+        "phpstan/phpstan-strict-rules": "@stable",
         "phpunit/phpunit": "^7.5"
     },
     "config": {
@@ -47,6 +50,7 @@
         }
     },
     "scripts": {
+        "phpstan": "./vendor/bin/phpstan analyse --level 3 --configuration phpstan.neon app src",
         "start": "php -S localhost:8080 -t public",
         "test": "phpunit"
     }
