@@ -33,6 +33,16 @@ abstract class Action
     protected $args;
 
     /**
+     * @var array
+     */
+    protected $bodyArgs;
+
+    /**
+     * @var array
+     */
+    protected $queryParams;
+
+    /**
      * @param LoggerInterface $logger
      */
     public function __construct(LoggerInterface $logger)
@@ -53,6 +63,8 @@ abstract class Action
         $this->request = $request;
         $this->response = $response;
         $this->args = $args;
+        $this->bodyArgs = $this->request->getParsedBody();
+        $this->queryParams = $this->request->getQueryParams();
 
         try {
             return $this->action();
@@ -88,13 +100,38 @@ abstract class Action
      * @return mixed
      * @throws HttpBadRequestException
      */
-    protected function resolveArg(string $name)
-    {
-        if (!isset($this->args[$name])) {
-            throw new HttpBadRequestException($this->request, "Could not resolve argument `{$name}`.");
+    protected function resolveArg(string $name) {
+        if (array_key_exists($name, $this->args)) {
+            return $this->args[$name];
+        } else {
+            throw new HttpBadRequestException($this->request, "Could not resolve argument `" . $name . "`.");
         }
+    }
 
-        return $this->args[$name];
+    /**
+     * @param  string $name
+     * @return mixed
+     * @throws HttpBadRequestException
+     */
+    protected function resolveBodyArg(string $name) {
+        if (array_key_exists($name, $this->bodyArgs)) {
+            return $this->bodyArgs[$name];
+        } else {
+            throw new HttpBadRequestException($this->request, "Could not resolve argument `" . $name . "`.");
+        }
+    }
+
+    /**
+     * @param  string $name
+     * @return mixed
+     * @throws HttpBadRequestException
+     */
+    protected function resolveQueryParam(string $name) {
+        if (array_key_exists($name, $this->queryParams)) {
+            return $this->queryParams[$name];
+        } else {
+            throw new HttpBadRequestException($this->request, "Could not resolve argument `" . $name . "`.");
+        }
     }
 
     /**
