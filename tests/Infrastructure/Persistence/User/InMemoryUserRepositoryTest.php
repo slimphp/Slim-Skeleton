@@ -43,12 +43,10 @@ class InMemoryUserRepositoryTest extends TestCase
         $this->assertEquals($user, $userRepository->findUserOfId(1));
     }
 
-    /**
-     * @expectedException \App\Domain\User\UserNotFoundException
-     */
     public function testFindUserOfIdThrowsNotFoundException()
     {
         $userRepository = new InMemoryUserRepository([]);
+        $this->expectException(\App\Domain\User\UserNotFoundException::class);
         $userRepository->findUserOfId(1);
     }
 }
