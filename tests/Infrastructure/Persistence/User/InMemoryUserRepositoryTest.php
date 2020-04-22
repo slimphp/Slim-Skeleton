@@ -46,7 +46,7 @@ class InMemoryUserRepositoryTest extends TestCase
     public function testFindUserOfIdThrowsNotFoundException()
     {
         $userRepository = new InMemoryUserRepository([]);
-        $this->expectException(\App\Domain\User\UserNotFoundException::class);
+        $this->expectException(UserNotFoundException::class);
         $userRepository->findUserOfId(1);
     }
 }
