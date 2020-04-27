@@ -101,9 +101,10 @@ abstract class Action
      * @param  array|object|null $data
      * @return Response
      */
-    protected function respondWithData($data = null): Response
+    protected function respondWithData($data = null, int $statusCode = 200): Response
     {
-        $payload = new ActionPayload(200, $data);
+        $payload = new ActionPayload($statusCode, $data);
+
         return $this->respond($payload);
     }
 
