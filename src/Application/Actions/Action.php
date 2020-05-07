@@ -101,9 +101,10 @@ abstract class Action
      * @param  array|object|null $data
      * @return Response
      */
-    protected function respondWithData($data = null): Response
+    protected function respondWithData($data = null, int $statusCode = 200): Response
     {
-        $payload = new ActionPayload(200, $data);
+        $payload = new ActionPayload($statusCode, $data);
+
         return $this->respond($payload);
     }
 
@@ -115,6 +116,9 @@ abstract class Action
     {
         $json = json_encode($payload, JSON_PRETTY_PRINT);
         $this->response->getBody()->write($json);
-        return $this->response->withHeader('Content-Type', 'application/json');
+
+        return $this->response
+                    ->withHeader('Content-Type', 'application/json')
+                    ->withStatus($payload->getStatusCode());
     }
 }
