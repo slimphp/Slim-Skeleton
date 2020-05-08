@@ -14,11 +14,12 @@ matrix:
   - php: nightly
 
 before_script:
-- composer require php-coveralls/php-coveralls:^2.1.0
+- composer require php-coveralls/php-coveralls:^2.2.0
 - composer install -n
 
 script:
 - if [[ "$ANALYSIS" == 'true' ]]; then vendor/bin/phpunit --coverage-clover clover.xml ; fi
+- if [[ "$ANALYSIS" == 'true' ]]; then vendor/bin/phpstan analyse src ; fi
 
 after_success:
 - if [[ "$ANALYSIS" == 'true' ]]; then vendor/bin/php-coveralls --coverage_clover=clover.xml -v ; fi
