@@ -21,7 +21,7 @@ class UserTest extends TestCase
 
     /**
      * @dataProvider userProvider
-     * @param int $id
+     * @param int    $id
      * @param string $username
      * @param string $firstName
      * @param string $lastName
@@ -38,7 +38,7 @@ class UserTest extends TestCase
 
     /**
      * @dataProvider userProvider
-     * @param int $id
+     * @param int    $id
      * @param string $username
      * @param string $firstName
      * @param string $lastName
