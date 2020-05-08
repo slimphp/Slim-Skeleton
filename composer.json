@@ -30,6 +30,7 @@
         "slim/slim": "^4.5"
     },
     "require-dev": {
+        "jangregor/phpstan-prophecy": "^0.7.0",
         "phpstan/phpstan": "^0.12.23",
         "phpunit/phpunit": "^8.5"
     },
