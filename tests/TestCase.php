@@ -58,11 +58,11 @@ class TestCase extends PHPUnit_TestCase
     }
 
     /**
-     * @param string $method
-     * @param string $path
-     * @param array  $headers
-     * @param array  $cookies
-     * @param array  $serverParams
+     * @param string        $method
+     * @param string        $path
+     * @param array<mixed>  $headers
+     * @param array<mixed>  $cookies
+     * @param array<mixed>  $serverParams
      * @return Request
      */
     protected function createRequest(
@@ -74,7 +74,13 @@ class TestCase extends PHPUnit_TestCase
     ): Request {
         $uri = new Uri('', '', 80, $path);
         $handle = fopen('php://temp', 'w+');
-        $stream = (new StreamFactory())->createStreamFromResource($handle);
+
+        $streamFactory = new StreamFactory();
+        if (is_resource($handle)) {
+            $stream = $streamFactory->createStreamFromResource($handle);
+        } else {
+            $stream = $streamFactory->createStream();
+        }
 
         $h = new Headers();
         foreach ($headers as $name => $value) {

@@ -17,7 +17,7 @@ class InMemoryUserRepository implements UserRepository
     /**
      * InMemoryUserRepository constructor.
      *
-     * @param array|null $users
+     * @param array<mixed>|null $users
      */
     public function __construct(array $users = null)
     {

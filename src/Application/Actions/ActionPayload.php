@@ -13,7 +13,7 @@ class ActionPayload implements JsonSerializable
     private $statusCode;
 
     /**
-     * @var array|object|null
+     * @var array<mixed>|object|null
      */
     private $data;
 
@@ -23,9 +23,9 @@ class ActionPayload implements JsonSerializable
     private $error;
 
     /**
-     * @param int                   $statusCode
-     * @param array|object|null     $data
-     * @param ActionError|null      $error
+     * @param int                       $statusCode
+     * @param array<mixed>|object|null  $data
+     * @param ActionError|null          $error
      */
     public function __construct(
         int $statusCode = 200,
@@ -46,7 +46,7 @@ class ActionPayload implements JsonSerializable
     }
 
     /**
-     * @return array|null|object
+     * @return array<mixed>|null|object
      */
     public function getData()
     {
@@ -62,7 +62,7 @@ class ActionPayload implements JsonSerializable
     }
 
     /**
-     * @return array
+     * @return array<mixed>
      */
     public function jsonSerialize()
     {

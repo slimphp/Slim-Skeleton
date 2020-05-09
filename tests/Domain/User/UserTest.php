@@ -8,7 +8,10 @@ use Tests\TestCase;
 
 class UserTest extends TestCase
 {
-    public function userProvider()
+    /**
+     * @return array<mixed>
+     */
+    public function userProvider(): array
     {
         return [
             [1, 'bill.gates', 'Bill', 'Gates'],
@@ -26,7 +29,7 @@ class UserTest extends TestCase
      * @param string $firstName
      * @param string $lastName
      */
-    public function testGetters(int $id, string $username, string $firstName, string $lastName)
+    public function testGetters(int $id, string $username, string $firstName, string $lastName): void
     {
         $user = new User($id, $username, $firstName, $lastName);
 
@@ -43,7 +46,7 @@ class UserTest extends TestCase
      * @param string $firstName
      * @param string $lastName
      */
-    public function testJsonSerialize(int $id, string $username, string $firstName, string $lastName)
+    public function testJsonSerialize(int $id, string $username, string $firstName, string $lastName): void
     {
         $user = new User($id, $username, $firstName, $lastName);
 

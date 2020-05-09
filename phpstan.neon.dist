@@ -1,4 +1,4 @@
 parameters:
-  level: 4
+    level: max
 includes:
     - vendor/jangregor/phpstan-prophecy/src/extension.neon

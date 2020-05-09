@@ -28,7 +28,7 @@ abstract class Action
     protected $response;
 
     /**
-     * @var array
+     * @var array<mixed>
      */
     protected $args;
 
@@ -41,14 +41,14 @@ abstract class Action
     }
 
     /**
-     * @param Request  $request
-     * @param Response $response
-     * @param array    $args
+     * @param Request       $request
+     * @param Response      $response
+     * @param array<mixed>  $args
      * @return Response
      * @throws HttpNotFoundException
      * @throws HttpBadRequestException
      */
-    public function __invoke(Request $request, Response $response, $args): Response
+    public function __invoke(Request $request, Response $response, array $args): Response
     {
         $this->request = $request;
         $this->response = $response;
@@ -69,13 +69,17 @@ abstract class Action
     abstract protected function action(): Response;
 
     /**
-     * @return array|object
+     * @return array<mixed>|object
      * @throws HttpBadRequestException
      */
     protected function getFormData()
     {
-        $input = json_decode(file_get_contents('php://input'));
+        $contents = file_get_contents('php://input');
+        if ($contents === false) {
+            throw new HttpBadRequestException($this->request, 'Failed to get content.');
+        }
 
+        $input = json_decode($contents);
         if (json_last_error() !== JSON_ERROR_NONE) {
             throw new HttpBadRequestException($this->request, 'Malformed JSON input.');
         }
@@ -98,7 +102,8 @@ abstract class Action
     }
 
     /**
-     * @param  array|object|null $data
+     * @param array<mixed>|object|null  $data
+     * @param int                       $statusCode
      * @return Response
      */
     protected function respondWithData($data = null, int $statusCode = 200): Response
@@ -114,7 +119,7 @@ abstract class Action
      */
     protected function respond(ActionPayload $payload): Response
     {
-        $json = json_encode($payload, JSON_PRETTY_PRINT);
+        $json = (string) json_encode($payload, JSON_PRETTY_PRINT);
         $this->response->getBody()->write($json);
 
         return $this->response

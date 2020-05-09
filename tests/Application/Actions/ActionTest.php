@@ -12,10 +12,11 @@ use Tests\TestCase;
 
 class ActionTest extends TestCase
 {
-    public function testActionSetsHttpCodeInRespond()
+    public function testActionSetsHttpCodeInRespond(): void
     {
         $app = $this->getAppInstance();
         $container = $app->getContainer();
+        /** @phpstan-ignore-next-line */
         $logger = $container->get(LoggerInterface::class);
 
         $testAction = new class($logger) extends Action {
@@ -45,10 +46,11 @@ class ActionTest extends TestCase
         $this->assertEquals(202, $response->getStatusCode());
     }
 
-    public function testActionSetsHttpCodeRespondData()
+    public function testActionSetsHttpCodeRespondData(): void
     {
         $app = $this->getAppInstance();
         $container = $app->getContainer();
+        /** @phpstan-ignore-next-line */
         $logger = $container->get(LoggerInterface::class);
 
         $testAction = new class($logger) extends Action {

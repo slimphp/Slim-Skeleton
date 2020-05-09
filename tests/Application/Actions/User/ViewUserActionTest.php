@@ -15,7 +15,7 @@ use Tests\TestCase;
 
 class ViewUserActionTest extends TestCase
 {
-    public function testAction()
+    public function testAction(): void
     {
         $app = $this->getAppInstance();
 
@@ -42,7 +42,7 @@ class ViewUserActionTest extends TestCase
         $this->assertEquals($serializedPayload, $payload);
     }
 
-    public function testActionThrowsUserNotFoundException()
+    public function testActionThrowsUserNotFoundException(): void
     {
         $app = $this->getAppInstance();
 

@@ -74,9 +74,9 @@ class User implements JsonSerializable
     }
 
     /**
-     * @return array
+     * @return array<mixed>
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): array
     {
         return [
             'id' => $this->id,
