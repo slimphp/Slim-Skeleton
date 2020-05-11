@@ -31,7 +31,7 @@
     },
     "require-dev": {
         "jangregor/phpstan-prophecy": "^0.6.2",
-        "phpstan/phpstan": "^0.12.23",
+        "phpstan/phpstan": "^0.12.25",
         "phpunit/phpunit": "^8.5"
     },
     "config": {
