@@ -24,6 +24,7 @@
     "require": {
         "php": "^7.2",
         "ext-json": "*",
+        "amirhwsin/php-ratelimit": "^1.0",
         "monolog/monolog": "^2.1",
         "php-di/php-di": "^6.2",
         "slim/psr7": "^1.1",

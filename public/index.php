@@ -7,8 +7,26 @@ use App\Application\ResponseEmitter\ResponseEmitter;
 use DI\ContainerBuilder;
 use Slim\Factory\AppFactory;
 use Slim\Factory\ServerRequestCreatorFactory;
-
+use RateLimit\Limiter;
 require __DIR__ . '/../vendor/autoload.php';
+
+$tra = new RateLimit\Limiter();
+
+// How many requests do you want to handle?
+$tra->requests = 20;
+
+// In what range? Enter in minutes: 1Min
+$tra->inRange = 1;
+
+// Returns false if user trying too hard
+if(!$tra->track()) {
+    print_r(json_encode(array(
+		'error_code' => 429,
+		'message' => "you've been rate limited"
+	)));
+	http_response_code(429);
+    exit; // avoiding to run other codes
+}
 
 // Instantiate PHP-DI ContainerBuilder
 $containerBuilder = new ContainerBuilder();
