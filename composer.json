@@ -32,7 +32,7 @@
     "require-dev": {
         "jangregor/phpstan-prophecy": "^0.8.0",
         "phpstan/extension-installer": "^1.0.4",
-        "phpstan/phpstan": "^0.12.33",
+        "phpstan/phpstan": "^0.12.34",
         "phpunit/phpunit": "^8.5"
     },
     "config": {
