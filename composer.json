@@ -25,14 +25,14 @@
         "php": "^7.2",
         "ext-json": "*",
         "monolog/monolog": "^2.1",
-        "php-di/php-di": "^6.2",
-        "slim/psr7": "^1.1",
+        "php-di/php-di": "^6.3",
+        "slim/psr7": "^1.2",
         "slim/slim": "^4.5"
     },
     "require-dev": {
-        "jangregor/phpstan-prophecy": "^0.8.0",
+        "jangregor/phpstan-prophecy": "^0.8.1",
         "phpstan/extension-installer": "^1.0.5",
-        "phpstan/phpstan": "^0.12.37",
+        "phpstan/phpstan": "^0.12.52",
         "phpunit/phpunit": "^8.5"
     },
     "config": {
