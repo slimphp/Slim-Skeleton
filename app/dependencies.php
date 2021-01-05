@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+use App\Domain\Settings\Settings;
+use App\Domain\Settings\SettingsInterface;
 use DI\ContainerBuilder;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
@@ -24,5 +26,10 @@ return function (ContainerBuilder $containerBuilder) {
 
             return $logger;
         },
+        SettingsInterface::class => function (ContainerInterface $c) {
+            $settings = $c->get('settings');
+
+            return (new Settings())->set($settings);
+        }
     ]);
 };

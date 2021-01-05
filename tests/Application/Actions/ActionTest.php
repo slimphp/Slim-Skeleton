@@ -5,6 +5,7 @@ namespace Tests\Application\Actions;
 
 use App\Application\Actions\Action;
 use App\Application\Actions\ActionPayload;
+use App\Domain\Settings\SettingsInterface;
 use DateTimeImmutable;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Log\LoggerInterface;
@@ -17,12 +18,14 @@ class ActionTest extends TestCase
         $app = $this->getAppInstance();
         $container = $app->getContainer();
         $logger = $container->get(LoggerInterface::class);
+        $settings = $container->get(SettingsInterface::class);
 
-        $testAction = new class($logger) extends Action {
+        $testAction = new class($logger, $settings) extends Action {
             public function __construct(
-                LoggerInterface $loggerInterface
+                LoggerInterface $loggerInterface,
+                SettingsInterface $settingsInterface
             ) {
-                parent::__construct($loggerInterface);
+                parent::__construct($loggerInterface, $settingsInterface);
             }
 
             public function action() :Response
@@ -50,12 +53,14 @@ class ActionTest extends TestCase
         $app = $this->getAppInstance();
         $container = $app->getContainer();
         $logger = $container->get(LoggerInterface::class);
+        $settings = $container->get(SettingsInterface::class);
 
-        $testAction = new class($logger) extends Action {
+        $testAction = new class($logger, $settings) extends Action {
             public function __construct(
-                LoggerInterface $loggerInterface
+                LoggerInterface $loggerInterface,
+                SettingsInterface $settings
             ) {
-                parent::__construct($loggerInterface);
+                parent::__construct($loggerInterface, $settings);
             }
 
             public function action() :Response

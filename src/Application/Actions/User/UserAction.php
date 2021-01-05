@@ -3,11 +3,12 @@ declare(strict_types=1);
 
 namespace App\Application\Actions\User;
 
-use App\Application\Actions\Action;
+use App\Application\Actions\Action as parentAlias;
+use App\Domain\Settings\SettingsInterface;
 use App\Domain\User\UserRepository;
 use Psr\Log\LoggerInterface;
 
-abstract class UserAction extends Action
+abstract class UserAction extends parentAlias
 {
     /**
      * @var UserRepository
@@ -16,11 +17,14 @@ abstract class UserAction extends Action
 
     /**
      * @param LoggerInterface $logger
-     * @param UserRepository  $userRepository
+     * @param SettingsInterface $settings
+     * @param UserRepository $userRepository
      */
-    public function __construct(LoggerInterface $logger, UserRepository $userRepository)
-    {
-        parent::__construct($logger);
+    public function __construct(LoggerInterface $logger,
+                                SettingsInterface $settings,
+                                UserRepository $userRepository
+    ) {
+        parent::__construct($logger, $settings);
         $this->userRepository = $userRepository;
     }
 }
