@@ -58,9 +58,9 @@ class ActionTest extends TestCase
         $testAction = new class($logger, $settings) extends Action {
             public function __construct(
                 LoggerInterface $loggerInterface,
-                SettingsInterface $settings
+                SettingsInterface $settingsInterface
             ) {
-                parent::__construct($loggerInterface, $settings);
+                parent::__construct($loggerInterface, $settingsInterface);
             }
 
             public function action() :Response
