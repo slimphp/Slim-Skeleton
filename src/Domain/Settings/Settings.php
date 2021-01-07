@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace App\Domain\Settings;
 
-
 class Settings implements SettingsInterface
 {
     private $settings;
