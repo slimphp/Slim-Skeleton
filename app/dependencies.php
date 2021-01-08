@@ -1,7 +1,6 @@
 <?php
 declare(strict_types=1);
 
-use App\Domain\Settings\Settings;
 use App\Domain\Settings\SettingsInterface;
 use DI\ContainerBuilder;
 use Monolog\Handler\StreamHandler;
@@ -13,7 +12,7 @@ use Psr\Log\LoggerInterface;
 return function (ContainerBuilder $containerBuilder) {
     $containerBuilder->addDefinitions([
         LoggerInterface::class => function (ContainerInterface $c) {
-            $settings = $c->get('settings');
+            $settings = $c->get(SettingsInterface::class)->get();
 
             $loggerSettings = $settings['logger'];
             $logger = new Logger($loggerSettings['name']);
@@ -26,10 +25,5 @@ return function (ContainerBuilder $containerBuilder) {
 
             return $logger;
         },
-        SettingsInterface::class => function (ContainerInterface $c) {
-            $settings = $c->get('settings');
-
-            return new Settings($settings);
-        }
     ]);
 };
