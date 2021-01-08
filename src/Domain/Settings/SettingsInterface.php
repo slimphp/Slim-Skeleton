@@ -5,7 +5,9 @@ namespace App\Domain\Settings;
 
 interface SettingsInterface
 {
+    /**
+     * @param string $key
+     * @return array
+     */
     public function get(string $key = ''): array;
-
-    public function set(array $settings): SettingsInterface;
 }

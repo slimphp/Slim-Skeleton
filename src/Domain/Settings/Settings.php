@@ -5,20 +5,26 @@ namespace App\Domain\Settings;
 
 class Settings implements SettingsInterface
 {
+    /**
+     * @var array
+     */
     private $settings;
 
-    public function get(string $key = ''): array
-    {
-        if (empty($key)) {
-            return $this->settings;
-        }
-
-        return $this->settings[$key];
-    }
-
-    public function set(array $settings): SettingsInterface
+    /**
+     * Settings constructor.
+     * @param array $settings
+     */
+    public function __construct(array $settings)
     {
         $this->settings = $settings;
-        return $this;
+    }
+
+    /**
+     * @param string $key
+     * @return array
+     */
+    public function get(string $key = ''): array
+    {
+        return (empty($key)) ? $this->settings : $this->settings[$key];
     }
 }

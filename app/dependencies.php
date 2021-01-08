@@ -29,7 +29,7 @@ return function (ContainerBuilder $containerBuilder) {
         SettingsInterface::class => function (ContainerInterface $c) {
             $settings = $c->get('settings');
 
-            return (new Settings())->set($settings);
+            return new Settings($settings);
         }
     ]);
 };
