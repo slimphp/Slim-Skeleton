@@ -41,14 +41,14 @@ abstract class Action
     }
 
     /**
-     * @param Request  $request
+     * @param Request $request
      * @param Response $response
-     * @param array    $args
+     * @param array $args
      * @return Response
      * @throws HttpNotFoundException
      * @throws HttpBadRequestException
      */
-    public function __invoke(Request $request, Response $response, $args): Response
+    public function __invoke(Request $request, Response $response, array $args): Response
     {
         $this->request = $request;
         $this->response = $response;
@@ -98,7 +98,8 @@ abstract class Action
     }
 
     /**
-     * @param  array|object|null $data
+     * @param array|object|null $data
+     * @param int $statusCode
      * @return Response
      */
     protected function respondWithData($data = null, int $statusCode = 200): Response
