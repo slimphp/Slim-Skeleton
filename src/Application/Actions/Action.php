@@ -4,7 +4,6 @@ declare(strict_types=1);
 namespace App\Application\Actions;
 
 use App\Domain\DomainException\DomainRecordNotFoundException;
-use App\Domain\Settings\SettingsInterface;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Log\LoggerInterface;
@@ -17,11 +16,6 @@ abstract class Action
      * @var LoggerInterface
      */
     protected $logger;
-
-    /**
-     * @var SettingsInterface
-     */
-    protected $settings;
 
     /**
      * @var Request
@@ -40,12 +34,10 @@ abstract class Action
 
     /**
      * @param LoggerInterface $logger
-     * @param SettingsInterface $settings
      */
-    public function __construct(LoggerInterface $logger, SettingsInterface $settings)
+    public function __construct(LoggerInterface $logger)
     {
         $this->logger = $logger;
-        $this->settings = $settings;
     }
 
     /**
@@ -106,7 +98,8 @@ abstract class Action
     }
 
     /**
-     * @param  array|object|null $data
+     * @param array|object|null $data
+     * @param int $statusCode
      * @return Response
      */
     protected function respondWithData($data = null, int $statusCode = 200): Response
