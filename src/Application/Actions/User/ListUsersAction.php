@@ -12,9 +12,7 @@ class ListUsersAction extends UserAction
      */
     protected function action(): Response
     {
-        $users = $this->userRepository->findAll();
-
-        $this->logger->info("Users list was viewed.");
+        $users = $this->listUserService->getAllUsers();
 
         return $this->respondWithData($users);
     }

@@ -30,6 +30,10 @@ $dependencies($containerBuilder);
 $repositories = require __DIR__ . '/../app/repositories.php';
 $repositories($containerBuilder);
 
+// Set up services
+$services = require __DIR__ . '/../app/services.php';
+$services($containerBuilder);
+
 // Build PHP-DI Container instance
 $container = $containerBuilder->build();
 

@@ -4,8 +4,8 @@ declare(strict_types=1);
 namespace Tests\Application\Actions\User;
 
 use App\Application\Actions\ActionPayload;
-use App\Domain\User\UserRepository;
 use App\Domain\User\User;
+use App\Service\User\ListUserService;
 use DI\Container;
 use Tests\TestCase;
 
@@ -20,13 +20,13 @@ class ListUserActionTest extends TestCase
 
         $user = new User(1, 'bill.gates', 'Bill', 'Gates');
 
-        $userRepositoryProphecy = $this->prophesize(UserRepository::class);
-        $userRepositoryProphecy
-            ->findAll()
+        $listUserServiceProphecy = $this->prophesize(ListUserService::class);
+        $listUserServiceProphecy
+            ->getAllUsers()
             ->willReturn([$user])
             ->shouldBeCalledOnce();
 
-        $container->set(UserRepository::class, $userRepositoryProphecy->reveal());
+        $container->set(ListUserService::class, $listUserServiceProphecy->reveal());
 
         $request = $this->createRequest('GET', '/users');
         $response = $app->handle($request);
