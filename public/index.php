@@ -8,6 +8,8 @@ use App\Application\Settings\SettingsInterface;
 use DI\ContainerBuilder;
 use Slim\Factory\AppFactory;
 use Slim\Factory\ServerRequestCreatorFactory;
+use Slim\Views\PhpRenderer;
+use App\Application\Controller\IndexController;
 
 require __DIR__ . '/../vendor/autoload.php';
 
@@ -32,6 +34,16 @@ $repositories($containerBuilder);
 
 // Build PHP-DI Container instance
 $container = $containerBuilder->build();
+
+// Set PHP-View in container
+$container->set('phpView', function() : PhpRenderer {
+    return new PhpRenderer(__DIR__ . '/../templates');
+});
+
+// Set IndexController in container
+$container->set('IndexController', function (ContainerInterface $container) : IndexController {
+	return new IndexController($container); 
+});
 
 // Instantiate the app
 AppFactory::setContainer($container);

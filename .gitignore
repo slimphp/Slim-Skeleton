@@ -5,3 +5,4 @@
 /logs/*
 !/logs/README.md
 .phpunit.result.cache
+composer.lock
