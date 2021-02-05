@@ -46,14 +46,12 @@ $middleware($app);
 $routes = require __DIR__ . '/../app/routes.php';
 $routes($app);
 
-/** @var bool $displayErrorDetails */
-$displayErrorDetails = $container->get(SettingsInterface::class)->get('displayErrorDetails');
+/** @var SettingsInterface $settings */
+$settings = $container->get(SettingsInterface::class);
 
-/** @var bool $logError */
-$logError = $container->get(SettingsInterface::class)->get('logError');
-
-/** @var bool $logErrorDetails */
-$logErrorDetails = $container->get(SettingsInterface::class)->get('logErrorDetails');
+$displayErrorDetails = $settings->get('displayErrorDetails');
+$logError = $settings->get('logError');
+$logErrorDetails = $settings->get('logErrorDetails');
 
 // Create Request object from globals
 $serverRequestCreator = ServerRequestCreatorFactory::create();
