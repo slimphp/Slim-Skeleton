@@ -49,6 +49,12 @@ $routes($app);
 /** @var bool $displayErrorDetails */
 $displayErrorDetails = $container->get(SettingsInterface::class)->get('displayErrorDetails');
 
+/** @var bool $logError */
+$logError = $container->get(SettingsInterface::class)->get('logError');
+
+/** @var bool $logErrorDetails */
+$logErrorDetails = $container->get(SettingsInterface::class)->get('logErrorDetails');
+
 // Create Request object from globals
 $serverRequestCreator = ServerRequestCreatorFactory::create();
 $request = $serverRequestCreator->createServerRequestFromGlobals();
@@ -65,7 +71,7 @@ register_shutdown_function($shutdownHandler);
 $app->addRoutingMiddleware();
 
 // Add Error Middleware
-$errorMiddleware = $app->addErrorMiddleware($displayErrorDetails, false, false);
+$errorMiddleware = $app->addErrorMiddleware($displayErrorDetails, $logError, $logErrorDetails);
 $errorMiddleware->setDefaultErrorHandler($errorHandler);
 
 // Run App & Emit Response
