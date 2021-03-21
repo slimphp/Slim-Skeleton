@@ -55,7 +55,7 @@ class HttpErrorHandler extends SlimErrorHandler
             && $exception instanceof Throwable
             && $this->displayErrorDetails
         ) {
-            $statusCode = $exception->getCode();
+            $statusCode = ($exception->getCode()) ? $exception->getCode() : $statusCode;
             $error->setDescription($exception->getMessage());
         }
 
