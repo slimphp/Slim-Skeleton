@@ -1,37 +1,28 @@
 <?php
-require '../vendor/autoload.php';
+require '..'.DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.'autoload.php';
+
+use Slim\Slim;
+use Slim\Views\TwigExtension;
+use Dotenv\Dotenv;
+
+$dotenv = Dotenv::createImmutable(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR);
+$dotenv->load();
+
+// Get configuration
+$configuration = require __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'app'.DIRECTORY_SEPARATOR.'config.php';
 
 // Prepare app
-$app = new \Slim\Slim(array(
-    'templates.path' => '../templates',
-));
+$app = new Slim($configuration['slim']);
 
-// Create monolog logger and store logger in container as singleton 
-// (Singleton resources retrieve the same log resource definition each time)
-$app->container->singleton('log', function () {
-    $log = new \Monolog\Logger('slim-skeleton');
-    $log->pushHandler(new \Monolog\Handler\StreamHandler('../logs/app.log', \Monolog\Logger::DEBUG));
-    return $log;
-});
+// Set container definitions
+require __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'app'.DIRECTORY_SEPARATOR.'container.php';
 
 // Prepare view
-$app->view(new \Slim\Views\Twig());
-$app->view->parserOptions = array(
-    'charset' => 'utf-8',
-    'cache' => realpath('../templates/cache'),
-    'auto_reload' => true,
-    'strict_variables' => false,
-    'autoescape' => true
-);
-$app->view->parserExtensions = array(new \Slim\Views\TwigExtension());
+$app->view->parserOptions = $configuration['view'];
+$app->view->parserExtensions = array(new TwigExtension());
 
-// Define routes
-$app->get('/', function () use ($app) {
-    // Sample log message
-    $app->log->info("Slim-Skeleton '/' route");
-    // Render index view
-    $app->render('index.html');
-});
+// Load routes
+require '..'.DIRECTORY_SEPARATOR.'app'.DIRECTORY_SEPARATOR.'routes.php';
 
 // Run app
 $app->run();

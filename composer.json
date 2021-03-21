@@ -16,6 +16,15 @@
         "monolog/monolog": "1.*",
         "slim/slim": "2.*",
         "slim/views": "0.*",
-        "twig/twig": "1.*"
+        "twig/twig": "1.*",
+        "vlucas/phpdotenv":"v5.*"
+    },
+    "autoload":{
+        "psr-0":{
+            "Controller":"src"
+        }
+    },
+    "scripts":{
+        "start": "php -S 0.0.0.0:8000 -t public"
     }
 }

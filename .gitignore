@@ -5,3 +5,4 @@
 !/templates/cache/README.md
 .DS_STORE
 composer.lock
+.env
