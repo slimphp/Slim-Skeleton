@@ -50,7 +50,7 @@ class ViewUserActionTest extends TestCase
         $responseFactory = $app->getResponseFactory();
 
         $errorHandler = new HttpErrorHandler($callableResolver, $responseFactory);
-        $errorMiddleware = new ErrorMiddleware($callableResolver, $responseFactory, true, false ,false);
+        $errorMiddleware = new ErrorMiddleware($callableResolver, $responseFactory, true, false, false);
         $errorMiddleware->setDefaultErrorHandler($errorHandler);
 
         $app->add($errorMiddleware);
