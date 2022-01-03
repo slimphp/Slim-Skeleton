@@ -1,4 +1,4 @@
-+Options All –Indexes
+Options All -Indexes
 
 <Files .htaccess>
 order allow,deny
