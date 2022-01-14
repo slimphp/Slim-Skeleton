@@ -50,17 +50,10 @@ abstract class Action
 
     /**
      * @return array|object
-     * @throws HttpBadRequestException
      */
     protected function getFormData()
     {
-        $input = json_decode(file_get_contents('php://input'));
-
-        if (json_last_error() !== JSON_ERROR_NONE) {
-            throw new HttpBadRequestException($this->request, 'Malformed JSON input.');
-        }
-
-        return $input;
+        return $this->request->getParsedBody();
     }
 
     /**
