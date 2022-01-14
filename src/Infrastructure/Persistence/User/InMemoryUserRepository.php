@@ -12,12 +12,10 @@ class InMemoryUserRepository implements UserRepository
     /**
      * @var User[]
      */
-    private $users;
+    private array $users;
 
     /**
-     * InMemoryUserRepository constructor.
-     *
-     * @param array|null $users
+     * @param User[]|null $users
      */
     public function __construct(array $users = null)
     {
