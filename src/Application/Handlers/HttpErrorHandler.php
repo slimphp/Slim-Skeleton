@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace App\Application\Handlers;
@@ -50,7 +51,8 @@ class HttpErrorHandler extends SlimErrorHandler
             }
         }
 
-        if (!($exception instanceof HttpException)
+        if (
+            !($exception instanceof HttpException)
             && $exception instanceof Throwable
             && $this->displayErrorDetails
         ) {
