@@ -6,7 +6,6 @@ namespace App\Application\Handlers;
 
 use App\Application\Actions\ActionError;
 use App\Application\Actions\ActionPayload;
-use Exception;
 use Psr\Http\Message\ResponseInterface as Response;
 use Slim\Exception\HttpBadRequestException;
 use Slim\Exception\HttpException;
