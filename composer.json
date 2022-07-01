@@ -35,7 +35,7 @@
         "phpstan/extension-installer": "^1.1.0",
         "phpstan/phpstan": "^1.7",
         "phpunit/phpunit": "^9.5.20",
-        "squizlabs/php_codesniffer": "^3.6"
+        "squizlabs/php_codesniffer": "^3.7"
     },
     "config": {
         "process-timeout": 0,
