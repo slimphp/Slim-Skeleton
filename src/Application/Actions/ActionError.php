@@ -22,7 +22,7 @@ class ActionError implements JsonSerializable
 
     private string $description;
 
-    public function __construct(string $type, ?string $description)
+    public function __construct(string $type, string $description)
     {
         $this->type = $type;
         $this->description = $description;
@@ -44,7 +44,7 @@ class ActionError implements JsonSerializable
         return $this->description;
     }
 
-    public function setDescription(?string $description = null): self
+    public function setDescription(string $description): self
     {
         $this->description = $description;
         return $this;
