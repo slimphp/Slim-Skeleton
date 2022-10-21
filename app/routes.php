@@ -26,7 +26,7 @@ return function (App $app) {
         $group->get('/{id}', ViewUserAction::class);
     });
     
-    $app->any('/{routes:.+}', function ($request, $response) {
+    $app->any('/{routes:.+}', function (Request $request) {
         throw new HttpNotFoundException($request);
     });
 };
