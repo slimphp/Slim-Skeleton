@@ -25,8 +25,8 @@ return function (App $app) {
         $group->get('', ListUsersAction::class);
         $group->get('/{id}', ViewUserAction::class);
     });
-
-    $app->map(['GET', 'POST', 'PUT', 'DELETE', 'PATCH'], '/{routes:.+}', function ($request, $response) {
+    
+    $app->any('/{routes:.+}', function ($request, $response) {
         throw new HttpNotFoundException($request);
     });
 };
