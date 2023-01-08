@@ -45,8 +45,7 @@ class ActionPayload implements JsonSerializable
         return $this->error;
     }
 
-    #[\ReturnTypeWillChange]
-    public function jsonSerialize(): array
+    public function jsonSerialize(): mixed
     {
         $payload = [
             'statusCode' => $this->statusCode,
