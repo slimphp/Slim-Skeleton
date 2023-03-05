@@ -1,9 +1,5 @@
 Options All -Indexes
 
-<Files ".htaccess">
-    Require all denied
-</Files>
-
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
