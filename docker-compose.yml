@@ -6,7 +6,7 @@ volumes:
 
 services:
     slim:
-        image: php:7-alpine
+        image: php:8-alpine
         working_dir: /var/www
         command: php -S 0.0.0.0:8080 -t public
         environment:
