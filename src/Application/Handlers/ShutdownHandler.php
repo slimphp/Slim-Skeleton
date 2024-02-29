@@ -52,18 +52,10 @@ class ShutdownHandler
         $errorMessage = $error['message'];
         $errorType = $error['type'];
 
-        if ($errorType === E_USER_ERROR) {
-            return "FATAL ERROR: {$errorMessage}. on line {$errorLine} in file {$errorFile}.";
-        }
-
-        if ($errorType === E_USER_WARNING) {
-            return "WARNING: {$errorMessage}";
-        }
-
-        if ($errorType === E_USER_NOTICE) {
-            return "NOTICE: {$errorMessage}";
-        }
-
-        return "FATAL ERROR: {$errorMessage}. on line {$errorLine} in file {$errorFile}.";
+        return match ($errorType) {
+            E_USER_WARNING => "WARNING: {$errorMessage}",
+            E_USER_NOTICE => "NOTICE: {$errorMessage}",
+            default => "FATAL ERROR: {$errorMessage}. on line {$errorLine} in file {$errorFile}."
+        };
     }
 }
