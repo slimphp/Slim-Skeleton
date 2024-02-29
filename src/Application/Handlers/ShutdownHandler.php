@@ -15,9 +15,6 @@ class ShutdownHandler
         private HttpErrorHandler $errorHandler,
         private bool $displayErrorDetails
     ) {
-        $this->request = $request;
-        $this->errorHandler = $errorHandler;
-        $this->displayErrorDetails = $displayErrorDetails;
     }
 
     public function __invoke()
@@ -41,7 +38,10 @@ class ShutdownHandler
         $responseEmitter->emit($response);
     }
 
-    private function getErrorMessage(array $error): string
+    /**
+     * @param array{type: int, message: string, file: string, line: int} $error
+     */
+    private function getErrorMessage(array $error = null): string
     {
         if (!$this->displayErrorDetails) {
             return 'An error while processing your request. Please try again later.';

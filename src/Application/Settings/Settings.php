@@ -14,11 +14,8 @@ class Settings implements SettingsInterface
         $this->settings = $settings;
     }
 
-    /**
-     * @return mixed
-     */
-    public function get(string $key = '')
+    public function get(string $key = ''): mixed
     {
-        return (empty($key)) ? $this->settings : $this->settings[$key];
+        return empty($key) ? $this->settings : $this->settings[$key];
     }
 }

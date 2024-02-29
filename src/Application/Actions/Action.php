@@ -49,10 +49,7 @@ abstract class Action
      */
     abstract protected function action(): Response;
 
-    /**
-     * @return array|object
-     */
-    protected function getFormData()
+    protected function getFormData(): array|object|null
     {
         return $this->request->getParsedBody();
     }
@@ -70,10 +67,7 @@ abstract class Action
         return $this->args[$name];
     }
 
-    /**
-     * @param array|object|null $data
-     */
-    protected function respondWithData($data = null, int $statusCode = 200): Response
+    protected function respondWithData(array|object|null $data = null, int $statusCode = 200): Response
     {
         $payload = new ActionPayload($statusCode, $data);
 
