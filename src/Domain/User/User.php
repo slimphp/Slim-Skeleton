@@ -8,17 +8,18 @@ use JsonSerializable;
 
 class User implements JsonSerializable
 {
-    private ?int $id;
-
     private string $username;
 
     private string $firstName;
 
     private string $lastName;
 
-    public function __construct(?int $id, string $username, string $firstName, string $lastName)
-    {
-        $this->id = $id;
+    public function __construct(
+        private readonly int|null $id,
+        string $username,
+        string $firstName,
+        string $lastName
+    ) {
         $this->username = strtolower($username);
         $this->firstName = ucfirst($firstName);
         $this->lastName = ucfirst($lastName);
