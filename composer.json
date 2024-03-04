@@ -22,7 +22,7 @@
         }
     ],
     "require": {
-        "php": "^7.4 || ^8.0",
+        "php": "^8.3",
         "ext-json": "*",
         "monolog/monolog": "^2.9",
         "php-di/php-di": "^6.4",

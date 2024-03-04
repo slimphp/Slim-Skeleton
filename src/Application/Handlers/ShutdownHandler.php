@@ -10,20 +10,11 @@ use Slim\Exception\HttpInternalServerErrorException;
 
 class ShutdownHandler
 {
-    private Request $request;
-
-    private HttpErrorHandler $errorHandler;
-
-    private bool $displayErrorDetails;
-
     public function __construct(
-        Request $request,
-        HttpErrorHandler $errorHandler,
-        bool $displayErrorDetails
+        private Request $request,
+        private HttpErrorHandler $errorHandler,
+        private bool $displayErrorDetails
     ) {
-        $this->request = $request;
-        $this->errorHandler = $errorHandler;
-        $this->displayErrorDetails = $displayErrorDetails;
     }
 
     public function __invoke()
@@ -47,7 +38,10 @@ class ShutdownHandler
         $responseEmitter->emit($response);
     }
 
-    private function getErrorMessage(array $error): string
+    /**
+     * @param array{type: int, message: string, file: string, line: int} $error
+     */
+    private function getErrorMessage(array $error = null): string
     {
         if (!$this->displayErrorDetails) {
             return 'An error while processing your request. Please try again later.';
@@ -58,18 +52,10 @@ class ShutdownHandler
         $errorMessage = $error['message'];
         $errorType = $error['type'];
 
-        if ($errorType === E_USER_ERROR) {
-            return "FATAL ERROR: {$errorMessage}. on line {$errorLine} in file {$errorFile}.";
-        }
-
-        if ($errorType === E_USER_WARNING) {
-            return "WARNING: {$errorMessage}";
-        }
-
-        if ($errorType === E_USER_NOTICE) {
-            return "NOTICE: {$errorMessage}";
-        }
-
-        return "FATAL ERROR: {$errorMessage}. on line {$errorLine} in file {$errorFile}.";
+        return match ($errorType) {
+            E_USER_WARNING => "WARNING: {$errorMessage}",
+            E_USER_NOTICE => "NOTICE: {$errorMessage}",
+            default => "FATAL ERROR: {$errorMessage}. on line {$errorLine} in file {$errorFile}."
+        };
     }
 }

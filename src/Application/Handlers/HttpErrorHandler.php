@@ -26,27 +26,25 @@ class HttpErrorHandler extends SlimErrorHandler
     {
         $exception = $this->exception;
         $statusCode = 500;
-        $error = new ActionError(
-            ActionError::SERVER_ERROR,
-            'An internal error has occurred while processing your request.'
-        );
+        $errorType = ActionError::SERVER_ERROR;
+        $description = 'An internal error has occurred while processing your request.';
 
         if ($exception instanceof HttpException) {
             $statusCode = $exception->getCode();
-            $error->setDescription($exception->getMessage());
+            $description = $exception->getMessage();
 
             if ($exception instanceof HttpNotFoundException) {
-                $error->setType(ActionError::RESOURCE_NOT_FOUND);
+                $errorType = ActionError::RESOURCE_NOT_FOUND;
             } elseif ($exception instanceof HttpMethodNotAllowedException) {
-                $error->setType(ActionError::NOT_ALLOWED);
+                $errorType = ActionError::NOT_ALLOWED;
             } elseif ($exception instanceof HttpUnauthorizedException) {
-                $error->setType(ActionError::UNAUTHENTICATED);
+                $errorType = ActionError::UNAUTHENTICATED;
             } elseif ($exception instanceof HttpForbiddenException) {
-                $error->setType(ActionError::INSUFFICIENT_PRIVILEGES);
+                $errorType = ActionError::INSUFFICIENT_PRIVILEGES;
             } elseif ($exception instanceof HttpBadRequestException) {
-                $error->setType(ActionError::BAD_REQUEST);
+                $errorType = ActionError::BAD_REQUEST;
             } elseif ($exception instanceof HttpNotImplementedException) {
-                $error->setType(ActionError::NOT_IMPLEMENTED);
+                $errorType = ActionError::NOT_IMPLEMENTED;
             }
         }
 
@@ -55,9 +53,10 @@ class HttpErrorHandler extends SlimErrorHandler
             && $exception instanceof Throwable
             && $this->displayErrorDetails
         ) {
-            $error->setDescription($exception->getMessage());
+            $description = $exception->getMessage();
         }
 
+        $error = new ActionError($errorType, $description);
         $payload = new ActionPayload($statusCode, null, $error);
         $encodedPayload = json_encode($payload, JSON_PRETTY_PRINT);
 
