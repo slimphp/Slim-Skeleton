@@ -24,10 +24,12 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.8",
         "monolog/monolog": "^2.9",
         "php-di/php-di": "^6.4",
         "slim/psr7": "^1.6",
-        "slim/slim": "^4.12"
+        "slim/slim": "^4.12",
+        "symfony/var-dumper": "^7.0"
     },
     "require-dev": {
         "jangregor/phpstan-prophecy": "^1.0.0",
