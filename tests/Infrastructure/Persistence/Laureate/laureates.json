@@ -1,0 +1,4301 @@
+{
+    "laureates": [
+        {
+            "id": "1012",
+            "knownName": {
+                "en": "Alain Aspect",
+                "se": "Alain Aspect"
+            },
+            "givenName": {
+                "en": "Alain",
+                "se": "Alain"
+            },
+            "familyName": {
+                "en": "Aspect",
+                "se": "Aspect"
+            },
+            "fullName": {
+                "en": "Alain Aspect",
+                "se": "Alain Aspect"
+            },
+            "fileName": "aspect",
+            "gender": "male",
+            "birth": {
+                "date": "1947-06-15",
+                "place": {
+                    "city": {
+                        "en": "Agen",
+                        "no": "Agen",
+                        "se": "Agen"
+                    },
+                    "country": {
+                        "en": "France",
+                        "no": "Frankrike",
+                        "se": "Frankrike"
+                    },
+                    "cityNow": {
+                        "en": "Agen",
+                        "no": "Agen",
+                        "se": "Agen",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q6625",
+                            "https://www.wikipedia.org/wiki/Agen"
+                        ],
+                        "latitude": "44.203056",
+                        "longitude": "0.618611"
+                    },
+                    "countryNow": {
+                        "en": "France",
+                        "no": "Frankrike",
+                        "se": "Frankrike",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q142"
+                        ],
+                        "latitude": "47.000000",
+                        "longitude": "2.000000"
+                    },
+                    "continent": {
+                        "en": "Europe",
+                        "no": "Europa",
+                        "se": "Europa"
+                    },
+                    "locationString": {
+                        "en": "Agen, France",
+                        "no": "Agen, Frankrike",
+                        "se": "Agen, Frankrike"
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Alain_Aspect",
+                "english": "https://en.wikipedia.org/wiki/Alain_Aspect"
+            },
+            "wikidata": {
+                "id": "Q364997",
+                "url": "https://www.wikidata.org/wiki/Q364997"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q364997",
+                "https://en.wikipedia.org/wiki/Alain_Aspect"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/1012",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/1012",
+                    "title": "Alain Aspect - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "2022",
+                    "category": {
+                        "en": "Physics",
+                        "no": "Fysikk",
+                        "se": "Fysik"
+                    },
+                    "categoryFullName": {
+                        "en": "The Nobel Prize in Physics",
+                        "no": "Nobelprisen i fysikk",
+                        "se": "Nobelpriset i fysik"
+                    },
+                    "sortOrder": "1",
+                    "portion": "1/3",
+                    "dateAwarded": "2022-10-04",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for experiments with entangled photons, establishing the violation of Bell inequalities and  pioneering quantum information science",
+                        "se": "för experiment med sammanfätade fotoner som påvisat brott mot Bell-olikheter och  banat väg för kvantinformationsvetenskap"
+                    },
+                    "prizeAmount": 10000000,
+                    "prizeAmountAdjusted": 10000000,
+                    "affiliations": [
+                        {
+                            "name": {
+                                "en": "Institut d’Optique Graduate School – Université Paris-Saclay",
+                                "no": "Institut d’Optique Graduate School – Université Paris-Saclay",
+                                "se": "Institut d’Optique Graduate School – Université Paris-Saclay"
+                            },
+                            "nameNow": {
+                                "en": "Institut d’Optique Graduate School – Université Paris-Saclay"
+                            },
+                            "city": {
+                                "en": "Paris",
+                                "no": "Paris",
+                                "se": "Paris"
+                            },
+                            "country": {
+                                "en": "France",
+                                "no": "Frankrike",
+                                "se": "Frankrike"
+                            },
+                            "cityNow": {
+                                "en": "Paris",
+                                "no": "Paris",
+                                "se": "Paris",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q90",
+                                    "https://www.wikipedia.org/wiki/Paris"
+                                ],
+                                "latitude": "48.860093",
+                                "longitude": "2.355954"
+                            },
+                            "countryNow": {
+                                "en": "France",
+                                "no": "Frankrike",
+                                "se": "Frankrike",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q142"
+                                ],
+                                "latitude": "47.000000",
+                                "longitude": "2.000000"
+                            },
+                            "continent": {
+                                "en": "Europe"
+                            },
+                            "locationString": {
+                                "en": "Paris, France",
+                                "no": "Paris, Frankrike",
+                                "se": "Paris, Frankrike"
+                            }
+                        },
+                        {
+                            "name": {
+                                "en": "École Polytechnique",
+                                "no": "École Polytechnique",
+                                "se": "École Polytechnique"
+                            },
+                            "nameNow": {
+                                "en": "École Polytechnique"
+                            },
+                            "city": {
+                                "en": "Palaiseau",
+                                "no": "Palaiseau",
+                                "se": "Palaiseau"
+                            },
+                            "country": {
+                                "en": "France",
+                                "no": "Frankrike",
+                                "se": "Frankrike"
+                            },
+                            "cityNow": {
+                                "en": "Palaiseau",
+                                "no": "Palaiseau",
+                                "se": "Palaiseau",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q205580",
+                                    "https://www.wikipedia.org/wiki/Palaiseau"
+                                ],
+                                "latitude": "48.714509",
+                                "longitude": "2.245748"
+                            },
+                            "countryNow": {
+                                "en": "France",
+                                "no": "Frankrike",
+                                "se": "Frankrike",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q142"
+                                ],
+                                "latitude": "47.000000",
+                                "longitude": "2.000000"
+                            },
+                            "continent": {
+                                "en": "Europe"
+                            },
+                            "locationString": {
+                                "en": "Palaiseau, France",
+                                "no": "Palaiseau, Frankrike",
+                                "se": "Palaiseau, Frankrike"
+                            }
+                        }
+                    ],
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/phy/2022",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/physics/2022/aspect/facts/",
+                            "title": "Alain Aspect - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/physics/2022/summary/",
+                            "title": "The Nobel Prize in Physics 2022",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "1004",
+            "knownName": {
+                "en": "Abdulrazak Gurnah",
+                "se": "Abdulrazak Gurnah"
+            },
+            "givenName": {
+                "en": "Abdulrazak",
+                "se": "Abdulrazak"
+            },
+            "familyName": {
+                "en": "Gurnah",
+                "se": "Gurnah"
+            },
+            "fullName": {
+                "en": "Abdulrazak Gurnah",
+                "se": "Abdulrazak Gurnah"
+            },
+            "fileName": "gurnah",
+            "gender": "male",
+            "birth": {
+                "date": "1948-00-00"
+            },
+            "wikipedia": {
+                "slug": "Abdulrazak_Gurnah",
+                "english": "https://en.wikipedia.org/wiki/Abdulrazak_Gurnah"
+            },
+            "wikidata": {
+                "id": "Q317877",
+                "url": "https://www.wikidata.org/wiki/Q317877"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q317877",
+                "https://en.wikipedia.org/wiki/Abdulrazak_Gurnah"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/1004",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/1004",
+                    "title": "Abdulrazak Gurnah - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "2021",
+                    "category": {
+                        "en": "Literature",
+                        "no": "Litteratur",
+                        "se": "Litteratur"
+                    },
+                    "categoryFullName": {
+                        "en": "The Nobel Prize in Literature",
+                        "no": "Nobelprisen i litteratur",
+                        "se": "Nobelpriset i litteratur"
+                    },
+                    "sortOrder": "1",
+                    "portion": "1",
+                    "dateAwarded": "2021-10-07",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for his uncompromising and compassionate penetration of the effects of colonialism and the fate of the refugee in the gulf between cultures and continents"
+                    },
+                    "prizeAmount": 10000000,
+                    "prizeAmountAdjusted": 10836735,
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/lit/2021",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/literature/2021/gurnah/facts/",
+                            "title": "Abdulrazak Gurnah - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/literature/2021/summary/",
+                            "title": "The Nobel Prize in Literature 2021",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "982",
+            "knownName": {
+                "en": "Abhijit Banerjee",
+                "se": "Abhijit Banerjee"
+            },
+            "givenName": {
+                "en": "Abhijit",
+                "se": "Abhijit"
+            },
+            "familyName": {
+                "en": "Banerjee",
+                "se": "Banerjee"
+            },
+            "fullName": {
+                "en": "Abhijit Banerjee",
+                "se": "Abhijit Banerjee"
+            },
+            "fileName": "banerjee",
+            "gender": "male",
+            "birth": {
+                "date": "1961-02-21",
+                "place": {
+                    "city": {
+                        "en": "Mumbai",
+                        "no": "Mumbai",
+                        "se": "Mumbai"
+                    },
+                    "country": {
+                        "en": "India",
+                        "no": "India",
+                        "se": "Indien"
+                    },
+                    "cityNow": {
+                        "en": "Mumbai",
+                        "no": "Mumbai",
+                        "se": "Mumbai",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q1156",
+                            "https://www.wikipedia.org/wiki/Mumbai"
+                        ],
+                        "latitude": "19.075833",
+                        "longitude": "72.877500"
+                    },
+                    "countryNow": {
+                        "en": "India",
+                        "no": "India",
+                        "se": "Indien",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q668"
+                        ],
+                        "latitude": "22.800000",
+                        "longitude": "83.000000"
+                    },
+                    "continent": {
+                        "en": "Asia",
+                        "no": "Asia",
+                        "se": "Asien"
+                    },
+                    "locationString": {
+                        "en": "Mumbai, India",
+                        "no": "Mumbai, India",
+                        "se": "Mumbai, Indien"
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Abhijit_Banerjee",
+                "english": "https://en.wikipedia.org/wiki/Abhijit_Banerjee"
+            },
+            "wikidata": {
+                "id": "Q320578",
+                "url": "https://www.wikidata.org/wiki/Q320578"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q320578",
+                "https://en.wikipedia.org/wiki/Abhijit_Banerjee"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/982",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/982",
+                    "title": "Abhijit Banerjee - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "2019",
+                    "category": {
+                        "en": "Economic Sciences",
+                        "no": "Økonomi",
+                        "se": "Ekonomi"
+                    },
+                    "categoryFullName": {
+                        "en": "The Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel",
+                        "no": "Sveriges Riksbanks pris i økonomisk vitenskap til minne om Alfred Nobel",
+                        "se": "Sveriges Riksbanks pris i ekonomisk vetenskap till Alfred Nobels minne"
+                    },
+                    "sortOrder": "1",
+                    "portion": "1/3",
+                    "dateAwarded": "2019-10-14",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for their experimental approach to alleviating global poverty",
+                        "se": "för deras experimentella ansats för att mildra global fattigdom"
+                    },
+                    "prizeAmount": 9000000,
+                    "prizeAmountAdjusted": 10013620,
+                    "affiliations": [
+                        {
+                            "name": {
+                                "en": "Massachusetts Institute of Technology (MIT)",
+                                "no": "Massachusetts Institute of Technology (MIT)",
+                                "se": "Massachusetts Institute of Technology (MIT)"
+                            },
+                            "nameNow": {
+                                "en": "Massachusetts Institute of Technology (MIT)"
+                            },
+                            "city": {
+                                "en": "Cambridge, MA",
+                                "no": "Cambridge, MA",
+                                "se": "Cambridge, MA"
+                            },
+                            "country": {
+                                "en": "USA",
+                                "no": "USA",
+                                "se": "USA"
+                            },
+                            "cityNow": {
+                                "en": "Cambridge, MA",
+                                "no": "Cambridge, MA",
+                                "se": "Cambridge, MA",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q49111",
+                                    "https://www.wikipedia.org/wiki/Cambridge,_Massachusetts"
+                                ],
+                                "latitude": "42.374024",
+                                "longitude": "-71.107306"
+                            },
+                            "countryNow": {
+                                "en": "USA",
+                                "no": "USA",
+                                "se": "USA",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q30"
+                                ],
+                                "latitude": "39.828175",
+                                "longitude": "-98.579500"
+                            },
+                            "continent": {
+                                "en": "North America"
+                            },
+                            "locationString": {
+                                "en": "Cambridge, MA, USA",
+                                "no": "Cambridge, MA, USA",
+                                "se": "Cambridge, MA, USA"
+                            }
+                        }
+                    ],
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/eco/2019",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/economic-sciences/2019/banerjee/facts/",
+                            "title": "Abhijit Banerjee - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/economic-sciences/2019/summary/",
+                            "title": "The Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 2019",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "981",
+            "knownName": {
+                "en": "Abiy Ahmed Ali",
+                "se": "Abiy Ahmed Ali"
+            },
+            "givenName": {
+                "en": "Abiy",
+                "se": "Abiy"
+            },
+            "familyName": {
+                "en": "Ahmed Ali",
+                "se": "Ahmed Ali"
+            },
+            "fullName": {
+                "en": "Abiy Ahmed Ali",
+                "se": "Abiy Ahmed Ali"
+            },
+            "fileName": "abiy",
+            "gender": "male",
+            "birth": {
+                "date": "1976-08-15",
+                "place": {
+                    "city": {
+                        "en": "Beshasha",
+                        "no": "Beshasha",
+                        "se": "Beshasha"
+                    },
+                    "country": {
+                        "en": "Ethiopia",
+                        "no": "Etiopia",
+                        "se": "Etiopien"
+                    },
+                    "cityNow": {
+                        "en": "Beshasha",
+                        "no": "Beshasha",
+                        "se": "Beshasha",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q2899862",
+                            "https://www.wikipedia.org/wiki/Beshasha"
+                        ],
+                        "latitude": "7.795864",
+                        "longitude": "36.477062"
+                    },
+                    "countryNow": {
+                        "en": "Ethiopia",
+                        "no": "Etiopia",
+                        "se": "Etiopien",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q115"
+                        ],
+                        "latitude": "9.000000",
+                        "longitude": "40.000000"
+                    },
+                    "continent": {
+                        "en": "Africa",
+                        "no": "Afrika",
+                        "se": "Afrika"
+                    },
+                    "locationString": {
+                        "en": "Beshasha, Ethiopia",
+                        "no": "Beshasha, Etiopia",
+                        "se": "Beshasha, Etiopien"
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Abiy_Ahmed",
+                "english": "https://en.wikipedia.org/wiki/Abiy_Ahmed"
+            },
+            "wikidata": {
+                "id": "Q50365049",
+                "url": "https://www.wikidata.org/wiki/Q50365049"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q50365049",
+                "https://en.wikipedia.org/wiki/Abiy_Ahmed"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/981",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/981",
+                    "title": "Abiy Ahmed Ali - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "2019",
+                    "category": {
+                        "en": "Peace",
+                        "no": "Fred",
+                        "se": "Fred"
+                    },
+                    "categoryFullName": {
+                        "en": "The Nobel Peace Prize",
+                        "no": "Nobels fredspris",
+                        "se": "Nobels fredspris"
+                    },
+                    "sortOrder": "1",
+                    "portion": "1",
+                    "dateAwarded": "2019-10-11",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for his efforts to achieve peace and international cooperation, and in particular for his decisive initiative to resolve the border conflict with neighbouring Eritrea",
+                        "no": "for hans innsats for fred og mellomstatlig samarbeid, og da særlig for hans avgjørande initiativ for å løsa grensekonflikten med nabolandet Eritrea"
+                    },
+                    "prizeAmount": 9000000,
+                    "prizeAmountAdjusted": 10013620,
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/pea/2019",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/peace/2019/abiy/facts/",
+                            "title": "Abiy Ahmed Ali - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/peace/2019/summary/",
+                            "title": "The Nobel Peace Prize 2019",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "978",
+            "knownName": {
+                "en": "Akira Yoshino",
+                "se": "Akira Yoshino"
+            },
+            "givenName": {
+                "en": "Akira",
+                "se": "Akira"
+            },
+            "familyName": {
+                "en": "Yoshino",
+                "se": "Yoshino"
+            },
+            "fullName": {
+                "en": "Akira Yoshino",
+                "se": "Akira Yoshino"
+            },
+            "fileName": "yoshino",
+            "gender": "male",
+            "birth": {
+                "date": "1948-01-30",
+                "place": {
+                    "city": {
+                        "en": "Suita",
+                        "no": "Suita",
+                        "se": "Suita"
+                    },
+                    "country": {
+                        "en": "Japan",
+                        "no": "Japan",
+                        "se": "Japan"
+                    },
+                    "cityNow": {
+                        "en": "Suita",
+                        "no": "Suita",
+                        "se": "Suita",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q653510",
+                            "https://www.wikipedia.org/wiki/Suita"
+                        ],
+                        "latitude": "34.764885",
+                        "longitude": "135.517349"
+                    },
+                    "countryNow": {
+                        "en": "Japan",
+                        "no": "Japan",
+                        "se": "Japan",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q17"
+                        ],
+                        "latitude": "35.000000",
+                        "longitude": "136.000000"
+                    },
+                    "continent": {
+                        "en": "Asia",
+                        "no": "Asia",
+                        "se": "Asien"
+                    },
+                    "locationString": {
+                        "en": "Suita, Japan",
+                        "no": "Suita, Japan",
+                        "se": "Suita, Japan"
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Akira_Yoshino",
+                "english": "https://en.wikipedia.org/wiki/Akira_Yoshino"
+            },
+            "wikidata": {
+                "id": "Q4701206",
+                "url": "https://www.wikidata.org/wiki/Q4701206"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q4701206",
+                "https://en.wikipedia.org/wiki/Akira_Yoshino"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/978",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/978",
+                    "title": "Akira Yoshino - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "2019",
+                    "category": {
+                        "en": "Chemistry",
+                        "no": "Kjemi",
+                        "se": "Kemi"
+                    },
+                    "categoryFullName": {
+                        "en": "The Nobel Prize in Chemistry",
+                        "no": "Nobelprisen i kjemi",
+                        "se": "Nobelpriset i kemi"
+                    },
+                    "sortOrder": "3",
+                    "portion": "1/3",
+                    "dateAwarded": "2019-10-09",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for the development of lithium-ion batteries",
+                        "se": "för utveckling av litiumjonbatterier"
+                    },
+                    "prizeAmount": 9000000,
+                    "prizeAmountAdjusted": 10013620,
+                    "affiliations": [
+                        {
+                            "name": {
+                                "en": "Asahi Kasei Corporation",
+                                "no": "Asahi Kasei Corporation",
+                                "se": "Asahi Kasei Corporation"
+                            },
+                            "nameNow": {
+                                "en": "Asahi Kasei Corporation"
+                            },
+                            "city": {
+                                "en": "Tokyo",
+                                "no": "Tokyo",
+                                "se": "Tokyo"
+                            },
+                            "country": {
+                                "en": "Japan",
+                                "no": "Japan",
+                                "se": "Japan"
+                            },
+                            "cityNow": {
+                                "en": "Tokyo",
+                                "no": "Tokyo",
+                                "se": "Tokyo",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q1490",
+                                    "https://www.wikipedia.org/wiki/Tokyo"
+                                ],
+                                "latitude": "35.680183",
+                                "longitude": "139.769373"
+                            },
+                            "countryNow": {
+                                "en": "Japan",
+                                "no": "Japan",
+                                "se": "Japan",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q17"
+                                ],
+                                "latitude": "35.000000",
+                                "longitude": "136.000000"
+                            },
+                            "continent": {
+                                "en": "Asia"
+                            },
+                            "locationString": {
+                                "en": "Tokyo, Japan",
+                                "no": "Tokyo, Japan",
+                                "se": "Tokyo, Japan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "en": "Meijo University",
+                                "no": "Meijo University",
+                                "se": "Meijo University"
+                            },
+                            "nameNow": {
+                                "en": "Meijo University"
+                            },
+                            "city": {
+                                "en": "Nagoya",
+                                "no": "Nagoya",
+                                "se": "Nagoya"
+                            },
+                            "country": {
+                                "en": "Japan",
+                                "no": "Japan",
+                                "se": "Japan"
+                            },
+                            "cityNow": {
+                                "en": "Nagoya",
+                                "no": "Nagoya",
+                                "se": "Nagoya",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q11751",
+                                    "https://www.wikipedia.org/wiki/Nagoya"
+                                ],
+                                "latitude": "35.180679",
+                                "longitude": "136.918749"
+                            },
+                            "countryNow": {
+                                "en": "Japan",
+                                "no": "Japan",
+                                "se": "Japan",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q17"
+                                ],
+                                "latitude": "35.000000",
+                                "longitude": "136.000000"
+                            },
+                            "continent": {
+                                "en": "Asia"
+                            },
+                            "locationString": {
+                                "en": "Nagoya, Japan",
+                                "no": "Nagoya, Japan",
+                                "se": "Nagoya, Japan"
+                            }
+                        }
+                    ],
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/che/2019",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/chemistry/2019/yoshino/facts/",
+                            "title": "Akira Yoshino - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/chemistry/2019/summary/",
+                            "title": "The Nobel Prize in Chemistry 2019",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "866",
+            "knownName": {
+                "en": "Adam G. Riess",
+                "se": "Adam G. Riess"
+            },
+            "givenName": {
+                "en": "Adam G.",
+                "se": "Adam G."
+            },
+            "familyName": {
+                "en": "Riess",
+                "se": "Riess"
+            },
+            "fullName": {
+                "en": "Adam G. Riess",
+                "se": "Adam G. Riess"
+            },
+            "fileName": "riess",
+            "gender": "male",
+            "birth": {
+                "date": "1969-12-16",
+                "place": {
+                    "city": {
+                        "en": "Washington, D.C.",
+                        "no": "Washington, D.C.",
+                        "se": "Washington, D.C."
+                    },
+                    "country": {
+                        "en": "USA",
+                        "no": "USA",
+                        "se": "USA"
+                    },
+                    "cityNow": {
+                        "en": "Washington, D.C.",
+                        "no": "Washington, D.C.",
+                        "se": "Washington, D.C.",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q61",
+                            "https://www.wikipedia.org/wiki/Washington,_D.C."
+                        ],
+                        "latitude": "38.899065",
+                        "longitude": "-77.036523"
+                    },
+                    "countryNow": {
+                        "en": "USA",
+                        "no": "USA",
+                        "se": "USA",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q30"
+                        ],
+                        "latitude": "39.828175",
+                        "longitude": "-98.579500"
+                    },
+                    "continent": {
+                        "en": "North America",
+                        "no": "Nord-Amerika",
+                        "se": "Nordamerika"
+                    },
+                    "locationString": {
+                        "en": "Washington, D.C., USA",
+                        "no": "Washington, D.C., USA",
+                        "se": "Washington, D.C., USA"
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Adam_Riess",
+                "english": "https://en.wikipedia.org/wiki/Adam_Riess"
+            },
+            "wikidata": {
+                "id": "Q106454",
+                "url": "https://www.wikidata.org/wiki/Q106454"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q106454",
+                "https://en.wikipedia.org/wiki/Adam_Riess"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/866",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/866",
+                    "title": "Adam G. Riess - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "2011",
+                    "category": {
+                        "en": "Physics",
+                        "no": "Fysikk",
+                        "se": "Fysik"
+                    },
+                    "categoryFullName": {
+                        "en": "The Nobel Prize in Physics",
+                        "no": "Nobelprisen i fysikk",
+                        "se": "Nobelpriset i fysik"
+                    },
+                    "sortOrder": "3",
+                    "portion": "1/4",
+                    "dateAwarded": "2011-10-04",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for the discovery of the accelerating expansion of the Universe through observations of distant supernovae",
+                        "se": "för upptäckten av universums accelererande expansion genom observationer av avlägsna supernovor"
+                    },
+                    "prizeAmount": 10000000,
+                    "prizeAmountAdjusted": 11946007,
+                    "affiliations": [
+                        {
+                            "name": {
+                                "en": "Johns Hopkins University",
+                                "no": "Johns Hopkins University",
+                                "se": "Johns Hopkins University"
+                            },
+                            "nameNow": {
+                                "en": "Johns Hopkins University"
+                            },
+                            "city": {
+                                "en": "Baltimore, MD",
+                                "no": "Baltimore, MD",
+                                "se": "Baltimore, MD"
+                            },
+                            "country": {
+                                "en": "USA",
+                                "no": "USA",
+                                "se": "USA"
+                            },
+                            "cityNow": {
+                                "en": "Baltimore, MD",
+                                "no": "Baltimore, MD",
+                                "se": "Baltimore, MD",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q5092",
+                                    "https://www.wikipedia.org/wiki/Baltimore"
+                                ],
+                                "latitude": "39.291586",
+                                "longitude": "-76.625305"
+                            },
+                            "countryNow": {
+                                "en": "USA",
+                                "no": "USA",
+                                "se": "USA",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q30"
+                                ],
+                                "latitude": "39.828175",
+                                "longitude": "-98.579500"
+                            },
+                            "continent": {
+                                "en": "North America"
+                            },
+                            "locationString": {
+                                "en": "Baltimore, MD, USA",
+                                "no": "Baltimore, MD, USA",
+                                "se": "Baltimore, MD, USA"
+                            }
+                        },
+                        {
+                            "name": {
+                                "en": "Space Telescope Science Institute",
+                                "no": "Space Telescope Science Institute",
+                                "se": "Space Telescope Science Institute"
+                            },
+                            "nameNow": {
+                                "en": "Space Telescope Science Institute"
+                            },
+                            "city": {
+                                "en": "Baltimore, MD",
+                                "no": "Baltimore, MD",
+                                "se": "Baltimore, MD"
+                            },
+                            "country": {
+                                "en": "USA",
+                                "no": "USA",
+                                "se": "USA"
+                            },
+                            "cityNow": {
+                                "en": "Baltimore, MD",
+                                "no": "Baltimore, MD",
+                                "se": "Baltimore, MD",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q5092",
+                                    "https://www.wikipedia.org/wiki/Baltimore"
+                                ],
+                                "latitude": "39.291586",
+                                "longitude": "-76.625305"
+                            },
+                            "countryNow": {
+                                "en": "USA",
+                                "no": "USA",
+                                "se": "USA",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q30"
+                                ],
+                                "latitude": "39.828175",
+                                "longitude": "-98.579500"
+                            },
+                            "continent": {
+                                "en": "North America"
+                            },
+                            "locationString": {
+                                "en": "Baltimore, MD, USA",
+                                "no": "Baltimore, MD, USA",
+                                "se": "Baltimore, MD, USA"
+                            }
+                        }
+                    ],
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/phy/2011",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/physics/2011/riess/facts/",
+                            "title": "Adam G. Riess - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/physics/2011/summary/",
+                            "title": "The Nobel Prize in Physics 2011",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "853",
+            "knownName": {
+                "en": "Akira Suzuki",
+                "se": "Akira Suzuki"
+            },
+            "givenName": {
+                "en": "Akira",
+                "se": "Akira"
+            },
+            "familyName": {
+                "en": "Suzuki",
+                "se": "Suzuki"
+            },
+            "fullName": {
+                "en": "Akira Suzuki",
+                "se": "Akira Suzuki"
+            },
+            "fileName": "suzuki",
+            "gender": "male",
+            "birth": {
+                "date": "1930-09-12",
+                "place": {
+                    "city": {
+                        "en": "Mukawa",
+                        "no": "Mukawa",
+                        "se": "Mukawa"
+                    },
+                    "country": {
+                        "en": "Japan",
+                        "no": "Japan",
+                        "se": "Japan"
+                    },
+                    "cityNow": {
+                        "en": "Mukawa",
+                        "no": "Mukawa",
+                        "se": "Mukawa",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q1187152",
+                            "https://www.wikipedia.org/wiki/Mukawa,_Hokkaido"
+                        ],
+                        "latitude": "42.574750",
+                        "longitude": "141.926750"
+                    },
+                    "countryNow": {
+                        "en": "Japan",
+                        "no": "Japan",
+                        "se": "Japan",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q17"
+                        ],
+                        "latitude": "35.000000",
+                        "longitude": "136.000000"
+                    },
+                    "continent": {
+                        "en": "Asia",
+                        "no": "Asia",
+                        "se": "Asien"
+                    },
+                    "locationString": {
+                        "en": "Mukawa, Japan",
+                        "no": "Mukawa, Japan",
+                        "se": "Mukawa, Japan"
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Akira_Suzuki_(chemist)",
+                "english": "https://en.wikipedia.org/wiki/Akira_Suzuki_(chemist)"
+            },
+            "wikidata": {
+                "id": "Q105949",
+                "url": "https://www.wikidata.org/wiki/Q105949"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q105949",
+                "https://en.wikipedia.org/wiki/Akira_Suzuki_(chemist)"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/853",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/853",
+                    "title": "Akira Suzuki - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "2010",
+                    "category": {
+                        "en": "Chemistry",
+                        "no": "Kjemi",
+                        "se": "Kemi"
+                    },
+                    "categoryFullName": {
+                        "en": "The Nobel Prize in Chemistry",
+                        "no": "Nobelprisen i kjemi",
+                        "se": "Nobelpriset i kemi"
+                    },
+                    "sortOrder": "3",
+                    "portion": "1/3",
+                    "dateAwarded": "2010-10-06",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for palladium-catalyzed cross couplings in organic synthesis",
+                        "se": "för palladiumkatalyserade korskopplingar i organisk syntes"
+                    },
+                    "prizeAmount": 10000000,
+                    "prizeAmountAdjusted": 12256203,
+                    "affiliations": [
+                        {
+                            "name": {
+                                "en": "Hokkaido University",
+                                "no": "Hokkaido University",
+                                "se": "Hokkaido University"
+                            },
+                            "nameNow": {
+                                "en": "Hokkaido University"
+                            },
+                            "city": {
+                                "en": "Sapporo",
+                                "no": "Sapporo",
+                                "se": "Sapporo"
+                            },
+                            "country": {
+                                "en": "Japan",
+                                "no": "Japan",
+                                "se": "Japan"
+                            },
+                            "cityNow": {
+                                "en": "Sapporo",
+                                "no": "Sapporo",
+                                "se": "Sapporo",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q37951",
+                                    "https://www.wikipedia.org/wiki/Sapporo"
+                                ],
+                                "latitude": "43.062096",
+                                "longitude": "141.354376"
+                            },
+                            "countryNow": {
+                                "en": "Japan",
+                                "no": "Japan",
+                                "se": "Japan",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q17"
+                                ],
+                                "latitude": "35.000000",
+                                "longitude": "136.000000"
+                            },
+                            "continent": {
+                                "en": "Asia"
+                            },
+                            "locationString": {
+                                "en": "Sapporo, Japan",
+                                "no": "Sapporo, Japan",
+                                "se": "Sapporo, Japan"
+                            }
+                        }
+                    ],
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/che/2010",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/chemistry/2010/suzuki/facts/",
+                            "title": "Akira Suzuki - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/chemistry/2010/summary/",
+                            "title": "The Nobel Prize in Chemistry 2010",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "843",
+            "knownName": {
+                "en": "Ada E. Yonath",
+                "se": "Ada E. Yonath"
+            },
+            "givenName": {
+                "en": "Ada E.",
+                "se": "Ada E."
+            },
+            "familyName": {
+                "en": "Yonath",
+                "se": "Yonath"
+            },
+            "fullName": {
+                "en": "Ada E. Yonath",
+                "se": "Ada E. Yonath"
+            },
+            "fileName": "yonath",
+            "gender": "female",
+            "birth": {
+                "date": "1939-06-22",
+                "place": {
+                    "city": {
+                        "en": "Jerusalem",
+                        "no": "Jerusalem",
+                        "se": "Jerusalem"
+                    },
+                    "country": {
+                        "en": "British Mandate of Palestine",
+                        "no": "Palestinamandatet",
+                        "se": "Brittiska Palestinamandatet"
+                    },
+                    "cityNow": {
+                        "en": "Jerusalem",
+                        "no": "Jerusalem",
+                        "se": "Jerusalem",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q1218",
+                            "https://www.wikipedia.org/wiki/Jerusalem"
+                        ],
+                        "latitude": "31.767983",
+                        "longitude": "35.213809"
+                    },
+                    "countryNow": {
+                        "en": "Israel",
+                        "no": "Israel",
+                        "se": "Israel",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q801"
+                        ],
+                        "latitude": "31.000000",
+                        "longitude": "35.000000"
+                    },
+                    "continent": {
+                        "en": "Asia",
+                        "no": "Asia",
+                        "se": "Asien"
+                    },
+                    "locationString": {
+                        "en": "Jerusalem, British Mandate of Palestine (now Israel)",
+                        "no": "Jerusalem, Palestinamandatet (nå Israel)",
+                        "se": "Jerusalem, Brittiska Palestinamandatet (nu Israel)"
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Ada_Yonath",
+                "english": "https://en.wikipedia.org/wiki/Ada_Yonath"
+            },
+            "wikidata": {
+                "id": "Q7426",
+                "url": "https://www.wikidata.org/wiki/Q7426"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q7426",
+                "https://en.wikipedia.org/wiki/Ada_Yonath"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/843",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/843",
+                    "title": "Ada E. Yonath - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "2009",
+                    "category": {
+                        "en": "Chemistry",
+                        "no": "Kjemi",
+                        "se": "Kemi"
+                    },
+                    "categoryFullName": {
+                        "en": "The Nobel Prize in Chemistry",
+                        "no": "Nobelprisen i kjemi",
+                        "se": "Nobelpriset i kemi"
+                    },
+                    "sortOrder": "3",
+                    "portion": "1/3",
+                    "dateAwarded": "2009-10-07",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for studies of the structure and function of the ribosome",
+                        "se": "för studier av ribosomens struktur och funktion"
+                    },
+                    "prizeAmount": 10000000,
+                    "prizeAmountAdjusted": 12413793,
+                    "affiliations": [
+                        {
+                            "name": {
+                                "en": "Weizmann Institute of Science",
+                                "no": "Weizmann Institute of Science",
+                                "se": "Weizmann Institute of Science"
+                            },
+                            "nameNow": {
+                                "en": "Weizmann Institute of Science"
+                            },
+                            "city": {
+                                "en": "Rehovot",
+                                "no": "Rehovot",
+                                "se": "Rehovot"
+                            },
+                            "country": {
+                                "en": "Israel",
+                                "no": "Israel",
+                                "se": "Israel"
+                            },
+                            "cityNow": {
+                                "en": "Rehovot",
+                                "no": "Rehovot",
+                                "se": "Rehovot",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q207350",
+                                    "https://www.wikipedia.org/wiki/Rehovot"
+                                ],
+                                "latitude": "31.892773",
+                                "longitude": "34.811272"
+                            },
+                            "countryNow": {
+                                "en": "Israel",
+                                "no": "Israel",
+                                "se": "Israel",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q801"
+                                ],
+                                "latitude": "31.000000",
+                                "longitude": "35.000000"
+                            },
+                            "continent": {
+                                "en": "Asia"
+                            },
+                            "locationString": {
+                                "en": "Rehovot, Israel",
+                                "no": "Rehovot, Israel",
+                                "se": "Rehovot, Israel"
+                            }
+                        }
+                    ],
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/che/2009",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/chemistry/2009/yonath/facts/",
+                            "title": "Ada E. Yonath - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/chemistry/2009/summary/",
+                            "title": "The Nobel Prize in Chemistry 2009",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "819",
+            "knownName": {
+                "en": "Al Gore",
+                "se": "Al Gore"
+            },
+            "givenName": {
+                "en": "Al",
+                "se": "Al"
+            },
+            "familyName": {
+                "en": "Gore",
+                "se": "Gore"
+            },
+            "fullName": {
+                "en": "Albert Arnold (Al) Gore Jr.",
+                "se": "Albert Arnold (Al) Gore Jr."
+            },
+            "fileName": "gore",
+            "gender": "male",
+            "birth": {
+                "date": "1948-03-31",
+                "place": {
+                    "city": {
+                        "en": "Washington, D.C.",
+                        "no": "Washington, D.C.",
+                        "se": "Washington, D.C."
+                    },
+                    "country": {
+                        "en": "USA",
+                        "no": "USA",
+                        "se": "USA"
+                    },
+                    "cityNow": {
+                        "en": "Washington, D.C.",
+                        "no": "Washington, D.C.",
+                        "se": "Washington, D.C.",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q61",
+                            "https://www.wikipedia.org/wiki/Washington,_D.C."
+                        ],
+                        "latitude": "38.899065",
+                        "longitude": "-77.036523"
+                    },
+                    "countryNow": {
+                        "en": "USA",
+                        "no": "USA",
+                        "se": "USA",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q30"
+                        ],
+                        "latitude": "39.828175",
+                        "longitude": "-98.579500"
+                    },
+                    "continent": {
+                        "en": "North America",
+                        "no": "Nord-Amerika",
+                        "se": "Nordamerika"
+                    },
+                    "locationString": {
+                        "en": "Washington, D.C., USA",
+                        "no": "Washington, D.C., USA",
+                        "se": "Washington, D.C., USA"
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Al_Gore",
+                "english": "https://en.wikipedia.org/wiki/Al_Gore"
+            },
+            "wikidata": {
+                "id": "Q19673",
+                "url": "https://www.wikidata.org/wiki/Q19673"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q19673",
+                "https://en.wikipedia.org/wiki/Al_Gore"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/819",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/819",
+                    "title": "Al Gore - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "2007",
+                    "category": {
+                        "en": "Peace",
+                        "no": "Fred",
+                        "se": "Fred"
+                    },
+                    "categoryFullName": {
+                        "en": "The Nobel Peace Prize",
+                        "no": "Nobels fredspris",
+                        "se": "Nobels fredspris"
+                    },
+                    "sortOrder": "2",
+                    "portion": "1/2",
+                    "dateAwarded": "2007-10-12",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for their efforts to build up and disseminate greater knowledge about man-made climate change, and to lay the foundations for the measures that are needed to counteract such change",
+                        "no": "for deira innsats for å skape og spreie større kunnskap om menneskeskapte klimaendringar og for å leggje grunnlag for dei tiltaka som krevst for å motverke desse endringane"
+                    },
+                    "prizeAmount": 10000000,
+                    "prizeAmountAdjusted": 12802893,
+                    "residences": [
+                        {
+                            "country": {
+                                "en": "USA",
+                                "no": "USA",
+                                "se": "USA"
+                            },
+                            "countryNow": {
+                                "en": "USA",
+                                "no": "USA",
+                                "se": "USA"
+                            },
+                            "continent": {
+                                "en": "North America"
+                            },
+                            "locationString": {
+                                "en": "USA",
+                                "no": "USA",
+                                "se": "USA"
+                            }
+                        }
+                    ],
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/pea/2007",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/peace/2007/gore/facts/",
+                            "title": "Al Gore - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/peace/2007/summary/",
+                            "title": "The Nobel Peace Prize 2007",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "779",
+            "knownName": {
+                "en": "Aaron Ciechanover",
+                "se": "Aaron Ciechanover"
+            },
+            "givenName": {
+                "en": "Aaron",
+                "se": "Aaron"
+            },
+            "familyName": {
+                "en": "Ciechanover",
+                "se": "Ciechanover"
+            },
+            "fullName": {
+                "en": "Aaron Ciechanover",
+                "se": "Aaron Ciechanover"
+            },
+            "fileName": "ciechanover",
+            "gender": "male",
+            "birth": {
+                "date": "1947-10-01",
+                "place": {
+                    "city": {
+                        "en": "Haifa",
+                        "no": "Haifa",
+                        "se": "Haifa"
+                    },
+                    "country": {
+                        "en": "British Protectorate of Palestine",
+                        "no": "British i Palestina",
+                        "se": "British Protectorate of Palestine"
+                    },
+                    "cityNow": {
+                        "en": "Haifa",
+                        "no": "Haifa",
+                        "se": "Haifa",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q41621",
+                            "https://www.wikipedia.org/wiki/Haifa"
+                        ],
+                        "latitude": "32.794421",
+                        "longitude": "34.990340"
+                    },
+                    "countryNow": {
+                        "en": "Israel",
+                        "no": "Israel",
+                        "se": "Israel",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q801"
+                        ],
+                        "latitude": "31.000000",
+                        "longitude": "35.000000"
+                    },
+                    "continent": {
+                        "en": "Asia",
+                        "no": "Asia",
+                        "se": "Asien"
+                    },
+                    "locationString": {
+                        "en": "Haifa, British Protectorate of Palestine (now Israel)",
+                        "no": "Haifa, British i Palestina (nå Israel)",
+                        "se": "Haifa, British Protectorate of Palestine (nu Israel)"
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Aaron_Ciechanover",
+                "english": "https://en.wikipedia.org/wiki/Aaron_Ciechanover"
+            },
+            "wikidata": {
+                "id": "Q233205",
+                "url": "https://www.wikidata.org/wiki/Q233205"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q233205",
+                "https://en.wikipedia.org/wiki/Aaron_Ciechanover"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/779",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/779",
+                    "title": "Aaron Ciechanover - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "2004",
+                    "category": {
+                        "en": "Chemistry",
+                        "no": "Kjemi",
+                        "se": "Kemi"
+                    },
+                    "categoryFullName": {
+                        "en": "The Nobel Prize in Chemistry",
+                        "no": "Nobelprisen i kjemi",
+                        "se": "Nobelpriset i kemi"
+                    },
+                    "sortOrder": "1",
+                    "portion": "1/3",
+                    "dateAwarded": "2004-10-06",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for the discovery of ubiquitin-mediated protein degradation",
+                        "se": "för upptäckten av ubiquitinmedierad proteinnedbrytning"
+                    },
+                    "prizeAmount": 10000000,
+                    "prizeAmountAdjusted": 13324969,
+                    "affiliations": [
+                        {
+                            "name": {
+                                "en": "Technion - Israel Institute of Technology",
+                                "no": "Technion - Israel Institute of Technology",
+                                "se": "Technion - Israel Institute of Technology"
+                            },
+                            "nameNow": {
+                                "en": "Technion - Israel Institute of Technology"
+                            },
+                            "city": {
+                                "en": "Haifa",
+                                "no": "Haifa",
+                                "se": "Haifa"
+                            },
+                            "country": {
+                                "en": "Israel",
+                                "no": "Israel",
+                                "se": "Israel"
+                            },
+                            "cityNow": {
+                                "en": "Haifa",
+                                "no": "Haifa",
+                                "se": "Haifa",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q41621",
+                                    "https://www.wikipedia.org/wiki/Haifa"
+                                ],
+                                "latitude": "32.794421",
+                                "longitude": "34.990340"
+                            },
+                            "countryNow": {
+                                "en": "Israel",
+                                "no": "Israel",
+                                "se": "Israel",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q801"
+                                ],
+                                "latitude": "31.000000",
+                                "longitude": "35.000000"
+                            },
+                            "continent": {
+                                "en": "Asia"
+                            },
+                            "locationString": {
+                                "en": "Haifa, Israel",
+                                "no": "Haifa, Israel",
+                                "se": "Haifa, Israel"
+                            }
+                        }
+                    ],
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/che/2004",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/chemistry/2004/ciechanover/facts/",
+                            "title": "Aaron Ciechanover - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/chemistry/2004/summary/",
+                            "title": "The Nobel Prize in Chemistry 2004",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "745",
+            "knownName": {
+                "en": "A. Michael Spence",
+                "se": "A. Michael Spence"
+            },
+            "givenName": {
+                "en": "A. Michael",
+                "se": "A. Michael"
+            },
+            "familyName": {
+                "en": "Spence",
+                "se": "Spence"
+            },
+            "fullName": {
+                "en": "A. Michael Spence",
+                "se": "A. Michael Spence"
+            },
+            "fileName": "spence",
+            "gender": "male",
+            "birth": {
+                "date": "1943-00-00",
+                "place": {
+                    "city": {
+                        "en": "Montclair, NJ",
+                        "no": "Montclair, NJ",
+                        "se": "Montclair, NJ"
+                    },
+                    "country": {
+                        "en": "USA",
+                        "no": "USA",
+                        "se": "USA"
+                    },
+                    "cityNow": {
+                        "en": "Montclair, NJ",
+                        "no": "Montclair, NJ",
+                        "se": "Montclair, NJ",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q678437",
+                            "https://www.wikipedia.org/wiki/Montclair,_New_Jersey"
+                        ],
+                        "latitude": "40.825930",
+                        "longitude": "-74.209030"
+                    },
+                    "countryNow": {
+                        "en": "USA",
+                        "no": "USA",
+                        "se": "USA",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q30"
+                        ],
+                        "latitude": "39.828175",
+                        "longitude": "-98.579500"
+                    },
+                    "continent": {
+                        "en": "North America",
+                        "no": "Nord-Amerika",
+                        "se": "Nordamerika"
+                    },
+                    "locationString": {
+                        "en": "Montclair, NJ, USA",
+                        "no": "Montclair, NJ, USA",
+                        "se": "Montclair, NJ, USA"
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Michael_Spence",
+                "english": "https://en.wikipedia.org/wiki/Michael_Spence"
+            },
+            "wikidata": {
+                "id": "Q157245",
+                "url": "https://www.wikidata.org/wiki/Q157245"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q157245",
+                "https://en.wikipedia.org/wiki/Michael_Spence"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/745",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/745",
+                    "title": "A. Michael Spence - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "2001",
+                    "category": {
+                        "en": "Economic Sciences",
+                        "no": "Økonomi",
+                        "se": "Ekonomi"
+                    },
+                    "categoryFullName": {
+                        "en": "The Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel",
+                        "no": "Sveriges Riksbanks pris i økonomisk vitenskap til minne om Alfred Nobel",
+                        "se": "Sveriges Riksbanks pris i ekonomisk vetenskap till Alfred Nobels minne"
+                    },
+                    "sortOrder": "2",
+                    "portion": "1/3",
+                    "dateAwarded": "2001-10-10",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for their analyses of markets with asymmetric information",
+                        "se": "för deras analys av marknader med assymetrisk informations"
+                    },
+                    "prizeAmount": 10000000,
+                    "prizeAmountAdjusted": 13927869,
+                    "affiliations": [
+                        {
+                            "name": {
+                                "en": "Stanford University",
+                                "no": "Stanford University",
+                                "se": "Stanford University"
+                            },
+                            "nameNow": {
+                                "en": "Stanford University"
+                            },
+                            "city": {
+                                "en": "Stanford, CA",
+                                "no": "Stanford, CA",
+                                "se": "Stanford, CA"
+                            },
+                            "country": {
+                                "en": "USA",
+                                "no": "USA",
+                                "se": "USA"
+                            },
+                            "cityNow": {
+                                "en": "Stanford, CA",
+                                "no": "Stanford, CA",
+                                "se": "Stanford, CA",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q173813",
+                                    "https://www.wikipedia.org/wiki/Stanford,_California"
+                                ],
+                                "latitude": "37.424734",
+                                "longitude": "-122.163858"
+                            },
+                            "countryNow": {
+                                "en": "USA",
+                                "no": "USA",
+                                "se": "USA",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q30"
+                                ],
+                                "latitude": "39.828175",
+                                "longitude": "-98.579500"
+                            },
+                            "continent": {
+                                "en": "North America"
+                            },
+                            "locationString": {
+                                "en": "Stanford, CA, USA",
+                                "no": "Stanford, CA, USA",
+                                "se": "Stanford, CA, USA"
+                            }
+                        }
+                    ],
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/eco/2001",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/economic-sciences/2001/spence/facts/",
+                            "title": "A. Michael Spence - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/economic-sciences/2001/summary/",
+                            "title": "The Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 2001",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "729",
+            "knownName": {
+                "en": "Alan Heeger",
+                "se": "Alan Heeger"
+            },
+            "givenName": {
+                "en": "Alan",
+                "se": "Alan"
+            },
+            "familyName": {
+                "en": "Heeger",
+                "se": "Heeger"
+            },
+            "fullName": {
+                "en": "Alan J. Heeger",
+                "se": "Alan J. Heeger"
+            },
+            "fileName": "heeger",
+            "gender": "male",
+            "birth": {
+                "date": "1936-01-22",
+                "place": {
+                    "city": {
+                        "en": "Sioux City, IA",
+                        "no": "Sioux City, IA",
+                        "se": "Sioux City, IA"
+                    },
+                    "country": {
+                        "en": "USA",
+                        "no": "USA",
+                        "se": "USA"
+                    },
+                    "cityNow": {
+                        "en": "Sioux City, IA",
+                        "no": "Sioux City, IA",
+                        "se": "Sioux City, IA",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q489255",
+                            "https://www.wikipedia.org/wiki/Sioux_City,_Iowa"
+                        ],
+                        "latitude": "42.496681",
+                        "longitude": "-96.405876"
+                    },
+                    "countryNow": {
+                        "en": "USA",
+                        "no": "USA",
+                        "se": "USA",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q30"
+                        ],
+                        "latitude": "39.828175",
+                        "longitude": "-98.579500"
+                    },
+                    "continent": {
+                        "en": "North America",
+                        "no": "Nord-Amerika",
+                        "se": "Nordamerika"
+                    },
+                    "locationString": {
+                        "en": "Sioux City, IA, USA",
+                        "no": "Sioux City, IA, USA",
+                        "se": "Sioux City, IA, USA"
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Alan_J._Heeger",
+                "english": "https://en.wikipedia.org/wiki/Alan_J._Heeger"
+            },
+            "wikidata": {
+                "id": "Q106751",
+                "url": "https://www.wikidata.org/wiki/Q106751"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q106751",
+                "https://en.wikipedia.org/wiki/Alan_J._Heeger"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/729",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/729",
+                    "title": "Alan Heeger - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "2000",
+                    "category": {
+                        "en": "Chemistry",
+                        "no": "Kjemi",
+                        "se": "Kemi"
+                    },
+                    "categoryFullName": {
+                        "en": "The Nobel Prize in Chemistry",
+                        "no": "Nobelprisen i kjemi",
+                        "se": "Nobelpriset i kemi"
+                    },
+                    "sortOrder": "1",
+                    "portion": "1/3",
+                    "dateAwarded": "2000-10-10",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for the discovery and development of conductive polymers",
+                        "se": "för upptäckten och utvecklandet av ledande polymerer"
+                    },
+                    "prizeAmount": 9000000,
+                    "prizeAmountAdjusted": 12838146,
+                    "affiliations": [
+                        {
+                            "name": {
+                                "en": "University of California",
+                                "no": "University of California",
+                                "se": "University of California"
+                            },
+                            "nameNow": {
+                                "en": "University of California"
+                            },
+                            "city": {
+                                "en": "Santa Barbara, CA",
+                                "no": "Santa Barbara, CA",
+                                "se": "Santa Barbara, CA"
+                            },
+                            "country": {
+                                "en": "USA",
+                                "no": "USA",
+                                "se": "USA"
+                            },
+                            "cityNow": {
+                                "en": "Santa Barbara, CA",
+                                "no": "Santa Barbara, CA",
+                                "se": "Santa Barbara, CA",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q159288",
+                                    "https://www.wikipedia.org/wiki/Santa_Barbara,_California"
+                                ],
+                                "latitude": "34.419237",
+                                "longitude": "-119.702479"
+                            },
+                            "countryNow": {
+                                "en": "USA",
+                                "no": "USA",
+                                "se": "USA",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q30"
+                                ],
+                                "latitude": "39.828175",
+                                "longitude": "-98.579500"
+                            },
+                            "continent": {
+                                "en": "North America"
+                            },
+                            "locationString": {
+                                "en": "Santa Barbara, CA, USA",
+                                "no": "Santa Barbara, CA, USA",
+                                "se": "Santa Barbara, CA, USA"
+                            }
+                        }
+                    ],
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/che/2000",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/chemistry/2000/heeger/facts/",
+                            "title": "Alan Heeger - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/chemistry/2000/summary/",
+                            "title": "The Nobel Prize in Chemistry 2000",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "730",
+            "knownName": {
+                "en": "Alan MacDiarmid",
+                "se": "Alan MacDiarmid"
+            },
+            "givenName": {
+                "en": "Alan",
+                "se": "Alan"
+            },
+            "familyName": {
+                "en": "MacDiarmid",
+                "se": "MacDiarmid"
+            },
+            "fullName": {
+                "en": "Alan G. MacDiarmid",
+                "se": "Alan G. MacDiarmid"
+            },
+            "fileName": "macdiarmid",
+            "gender": "male",
+            "birth": {
+                "date": "1927-04-14",
+                "place": {
+                    "city": {
+                        "en": "Masterton",
+                        "no": "Masterton",
+                        "se": "Masterton"
+                    },
+                    "country": {
+                        "en": "New Zealand",
+                        "no": "New Zealand",
+                        "se": "Nya Zeeland"
+                    },
+                    "cityNow": {
+                        "en": "Masterton",
+                        "no": "Masterton",
+                        "se": "Masterton",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q1223916",
+                            "https://www.wikipedia.org/wiki/Masterton"
+                        ],
+                        "latitude": "-40.966667",
+                        "longitude": "175.650000"
+                    },
+                    "countryNow": {
+                        "en": "New Zealand",
+                        "no": "New Zealand",
+                        "se": "Nya Zeeland",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q664"
+                        ],
+                        "latitude": "-41.200000",
+                        "longitude": "174.000000"
+                    },
+                    "continent": {
+                        "en": "Oceania",
+                        "no": "Oseania",
+                        "se": "Oceanien"
+                    },
+                    "locationString": {
+                        "en": "Masterton, New Zealand",
+                        "no": "Masterton, New Zealand",
+                        "se": "Masterton, Nya Zeeland"
+                    }
+                }
+            },
+            "death": {
+                "date": "2007-02-07",
+                "place": {
+                    "city": {
+                        "en": "Drexel Hill, PA",
+                        "no": "Drexel Hill, PA",
+                        "se": "Drexel Hill, PA"
+                    },
+                    "country": {
+                        "en": "USA",
+                        "no": "USA",
+                        "se": "USA",
+                        "sameAs": "https://www.wikidata.org/wiki/Q30"
+                    },
+                    "cityNow": {
+                        "en": "Drexel Hill, PA",
+                        "no": "Drexel Hill, PA",
+                        "se": "Drexel Hill, PA",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q1132763",
+                            "https://www.wikipedia.org/wiki/Drexel_Hill,_Pennsylvania"
+                        ],
+                        "latitude": "39.947056",
+                        "longitude": "-75.292130"
+                    },
+                    "countryNow": {
+                        "en": "USA",
+                        "no": "USA",
+                        "se": "USA",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q30"
+                        ],
+                        "latitude": "39.828175",
+                        "longitude": "-98.579500"
+                    },
+                    "continent": {
+                        "en": "North America",
+                        "no": "Nord-Amerika",
+                        "se": "Nordamerika"
+                    },
+                    "locationString": {
+                        "en": "Drexel Hill, PA, USA",
+                        "no": "Drexel Hill, PA, USA",
+                        "se": "Drexel Hill, PA, USA"
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Alan_MacDiarmid",
+                "english": "https://en.wikipedia.org/wiki/Alan_MacDiarmid"
+            },
+            "wikidata": {
+                "id": "Q110942",
+                "url": "https://www.wikidata.org/wiki/Q110942"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q110942",
+                "https://en.wikipedia.org/wiki/Alan_MacDiarmid"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/730",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/730",
+                    "title": "Alan MacDiarmid - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "2000",
+                    "category": {
+                        "en": "Chemistry",
+                        "no": "Kjemi",
+                        "se": "Kemi"
+                    },
+                    "categoryFullName": {
+                        "en": "The Nobel Prize in Chemistry",
+                        "no": "Nobelprisen i kjemi",
+                        "se": "Nobelpriset i kemi"
+                    },
+                    "sortOrder": "2",
+                    "portion": "1/3",
+                    "dateAwarded": "2000-10-10",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for the discovery and development of conductive polymers",
+                        "se": "för upptäckten och utvecklandet av ledande polymerer"
+                    },
+                    "prizeAmount": 9000000,
+                    "prizeAmountAdjusted": 12838146,
+                    "affiliations": [
+                        {
+                            "name": {
+                                "en": "University of Pennsylvania",
+                                "no": "University of Pennsylvania",
+                                "se": "University of Pennsylvania"
+                            },
+                            "nameNow": {
+                                "en": "University of Pennsylvania"
+                            },
+                            "city": {
+                                "en": "Philadelphia, PA",
+                                "no": "Philadelphia, PA",
+                                "se": "Philadelphia, PA"
+                            },
+                            "country": {
+                                "en": "USA",
+                                "no": "USA",
+                                "se": "USA"
+                            },
+                            "cityNow": {
+                                "en": "Philadelphia, PA",
+                                "no": "Philadelphia, PA",
+                                "se": "Philadelphia, PA",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q1345",
+                                    "https://www.wikipedia.org/wiki/Philadelphia"
+                                ],
+                                "latitude": "39.957132",
+                                "longitude": "-75.174342"
+                            },
+                            "countryNow": {
+                                "en": "USA",
+                                "no": "USA",
+                                "se": "USA",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q30"
+                                ],
+                                "latitude": "39.828175",
+                                "longitude": "-98.579500"
+                            },
+                            "continent": {
+                                "en": "North America"
+                            },
+                            "locationString": {
+                                "en": "Philadelphia, PA, USA",
+                                "no": "Philadelphia, PA, USA",
+                                "se": "Philadelphia, PA, USA"
+                            }
+                        }
+                    ],
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/che/2000",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/chemistry/2000/macdiarmid/facts/",
+                            "title": "Alan MacDiarmid - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/chemistry/2000/summary/",
+                            "title": "The Nobel Prize in Chemistry 2000",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "292",
+            "knownName": {
+                "en": "Ahmed Zewail",
+                "se": "Ahmed Zewail"
+            },
+            "givenName": {
+                "en": "Ahmed",
+                "se": "Ahmed"
+            },
+            "familyName": {
+                "en": "Zewail",
+                "se": "Zewail"
+            },
+            "fullName": {
+                "en": "Ahmed H. Zewail",
+                "se": "Ahmed H. Zewail"
+            },
+            "fileName": "zewail",
+            "gender": "male",
+            "birth": {
+                "date": "1946-02-26",
+                "place": {
+                    "city": {
+                        "en": "Damanhur",
+                        "no": "Damanhur",
+                        "se": "Damanhur"
+                    },
+                    "country": {
+                        "en": "Egypt",
+                        "no": "Egypt",
+                        "se": "Egypten"
+                    },
+                    "cityNow": {
+                        "en": "Damanhur",
+                        "no": "Damanhur",
+                        "se": "Damanhur",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q328153",
+                            "https://www.wikipedia.org/wiki/Damanhur"
+                        ],
+                        "latitude": "31.050000",
+                        "longitude": "30.466667"
+                    },
+                    "countryNow": {
+                        "en": "Egypt",
+                        "no": "Egypt",
+                        "se": "Egypten",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q79"
+                        ],
+                        "latitude": "27.000000",
+                        "longitude": "29.000000"
+                    },
+                    "continent": {
+                        "en": "Africa",
+                        "no": "Afrika",
+                        "se": "Afrika"
+                    },
+                    "locationString": {
+                        "en": "Damanhur, Egypt",
+                        "no": "Damanhur, Egypt",
+                        "se": "Damanhur, Egypten"
+                    }
+                }
+            },
+            "death": {
+                "date": "2016-08-02",
+                "place": {
+                    "city": {
+                        "en": "Pasadena, CA",
+                        "no": "Pasadena, CA",
+                        "se": "Pasadena, CA"
+                    },
+                    "country": {
+                        "en": "USA",
+                        "no": "USA",
+                        "se": "USA",
+                        "sameAs": "https://www.wikidata.org/wiki/Q30"
+                    },
+                    "cityNow": {
+                        "en": "Pasadena, CA",
+                        "no": "Pasadena, CA",
+                        "se": "Pasadena, CA",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q485176",
+                            "https://www.wikipedia.org/wiki/Pasadena,_California"
+                        ],
+                        "latitude": "34.150071",
+                        "longitude": "-118.142111"
+                    },
+                    "countryNow": {
+                        "en": "USA",
+                        "no": "USA",
+                        "se": "USA",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q30"
+                        ],
+                        "latitude": "39.828175",
+                        "longitude": "-98.579500"
+                    },
+                    "continent": {
+                        "en": "North America",
+                        "no": "Nord-Amerika",
+                        "se": "Nordamerika"
+                    },
+                    "locationString": {
+                        "en": "Pasadena, CA, USA",
+                        "no": "Pasadena, CA, USA",
+                        "se": "Pasadena, CA, USA"
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Ahmed_Zewail",
+                "english": "https://en.wikipedia.org/wiki/Ahmed_Zewail"
+            },
+            "wikidata": {
+                "id": "Q106624",
+                "url": "https://www.wikidata.org/wiki/Q106624"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q106624",
+                "https://en.wikipedia.org/wiki/Ahmed_Zewail"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/292",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/292",
+                    "title": "Ahmed Zewail - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "1999",
+                    "category": {
+                        "en": "Chemistry",
+                        "no": "Kjemi",
+                        "se": "Kemi"
+                    },
+                    "categoryFullName": {
+                        "en": "The Nobel Prize in Chemistry",
+                        "no": "Nobelprisen i kjemi",
+                        "se": "Nobelpriset i kemi"
+                    },
+                    "sortOrder": "1",
+                    "portion": "1",
+                    "dateAwarded": "1999-10-12",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for his studies of the transition states of chemical reactions using femtosecond spectroscopy",
+                        "se": "för hans studier av kemiska reaktioners övergångstillstånd med femtosekundspektroskopi"
+                    },
+                    "prizeAmount": 7900000,
+                    "prizeAmountAdjusted": 11383718,
+                    "affiliations": [
+                        {
+                            "name": {
+                                "en": "California Institute of Technology (Caltech)",
+                                "no": "California Institute of Technology (Caltech)",
+                                "se": "California Institute of Technology (Caltech)"
+                            },
+                            "nameNow": {
+                                "en": "California Institute of Technology (Caltech)"
+                            },
+                            "city": {
+                                "en": "Pasadena, CA",
+                                "no": "Pasadena, CA",
+                                "se": "Pasadena, CA"
+                            },
+                            "country": {
+                                "en": "USA",
+                                "no": "USA",
+                                "se": "USA"
+                            },
+                            "cityNow": {
+                                "en": "Pasadena, CA",
+                                "no": "Pasadena, CA",
+                                "se": "Pasadena, CA",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q485176",
+                                    "https://www.wikipedia.org/wiki/Pasadena,_California"
+                                ],
+                                "latitude": "34.150071",
+                                "longitude": "-118.142111"
+                            },
+                            "countryNow": {
+                                "en": "USA",
+                                "no": "USA",
+                                "se": "USA",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q30"
+                                ],
+                                "latitude": "39.828175",
+                                "longitude": "-98.579500"
+                            },
+                            "continent": {
+                                "en": "North America"
+                            },
+                            "locationString": {
+                                "en": "Pasadena, CA, USA",
+                                "no": "Pasadena, CA, USA",
+                                "se": "Pasadena, CA, USA"
+                            }
+                        }
+                    ],
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/che/1999",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/chemistry/1999/zewail/facts/",
+                            "title": "Ahmed Zewail - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/chemistry/1999/summary/",
+                            "title": "The Nobel Prize in Chemistry 1999",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "259",
+            "knownName": {
+                "en": "Aaron Klug",
+                "se": "Aaron Klug"
+            },
+            "givenName": {
+                "en": "Aaron",
+                "se": "Aaron"
+            },
+            "familyName": {
+                "en": "Klug",
+                "se": "Klug"
+            },
+            "fullName": {
+                "en": "Aaron Klug",
+                "se": "Aaron Klug"
+            },
+            "fileName": "klug",
+            "gender": "male",
+            "birth": {
+                "date": "1926-08-11",
+                "place": {
+                    "city": {
+                        "en": "Zelvas",
+                        "no": "Zelvas",
+                        "se": "Zelvas"
+                    },
+                    "country": {
+                        "en": "Lithuania",
+                        "no": "Litauen",
+                        "se": "Litauen"
+                    },
+                    "cityNow": {
+                        "en": "Zelvas",
+                        "no": "Zelvas",
+                        "se": "Zelvas",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q691679",
+                            "https://www.wikipedia.org/wiki/%C5%BDelva"
+                        ],
+                        "latitude": "53.148256",
+                        "longitude": "24.816515"
+                    },
+                    "countryNow": {
+                        "en": "Lithuania",
+                        "no": "Litauen",
+                        "se": "Litauen",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q37"
+                        ],
+                        "latitude": "55.200000",
+                        "longitude": "24.000000"
+                    },
+                    "continent": {
+                        "en": "Europe",
+                        "no": "Europa",
+                        "se": "Europa"
+                    },
+                    "locationString": {
+                        "en": "Zelvas, Lithuania",
+                        "no": "Zelvas, Litauen",
+                        "se": "Zelvas, Litauen"
+                    }
+                }
+            },
+            "death": {
+                "date": "2018-11-20",
+                "place": {
+                    "locationString": {
+                        "en": "",
+                        "no": "",
+                        "se": ""
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Aaron_Klug",
+                "english": "https://en.wikipedia.org/wiki/Aaron_Klug"
+            },
+            "wikidata": {
+                "id": "Q190626",
+                "url": "https://www.wikidata.org/wiki/Q190626"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q190626",
+                "https://en.wikipedia.org/wiki/Aaron_Klug"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/259",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/259",
+                    "title": "Aaron Klug - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "1982",
+                    "category": {
+                        "en": "Chemistry",
+                        "no": "Kjemi",
+                        "se": "Kemi"
+                    },
+                    "categoryFullName": {
+                        "en": "The Nobel Prize in Chemistry",
+                        "no": "Nobelprisen i kjemi",
+                        "se": "Nobelpriset i kemi"
+                    },
+                    "sortOrder": "1",
+                    "portion": "1",
+                    "dateAwarded": "1982-10-18",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for his development of crystallographic electron microscopy and his structural elucidation of biologically important nucleic acid-protein complexes",
+                        "se": "för hans utveckling av kristallografisk elektronmikroskopi och hans klarläggande av strukturen hos biologiskt viktiga nukleinsyra-proteinkomplex"
+                    },
+                    "prizeAmount": 1150000,
+                    "prizeAmountAdjusted": 3514532,
+                    "affiliations": [
+                        {
+                            "name": {
+                                "en": "MRC Laboratory of Molecular Biology",
+                                "no": "MRC Laboratory of Molecular Biology",
+                                "se": "MRC Laboratory of Molecular Biology"
+                            },
+                            "nameNow": {
+                                "en": "MRC Laboratory of Molecular Biology"
+                            },
+                            "city": {
+                                "en": "Cambridge",
+                                "no": "Cambridge",
+                                "se": "Cambridge"
+                            },
+                            "country": {
+                                "en": "United Kingdom",
+                                "no": "Storbritannia",
+                                "se": "Storbritannien"
+                            },
+                            "cityNow": {
+                                "en": "Cambridge",
+                                "no": "Cambridge",
+                                "se": "Cambridge",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q350",
+                                    "https://www.wikipedia.org/wiki/Cambridge"
+                                ],
+                                "latitude": "52.194605",
+                                "longitude": "0.135092"
+                            },
+                            "countryNow": {
+                                "en": "United Kingdom",
+                                "no": "Storbritannia",
+                                "se": "Storbritannien",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q145"
+                                ],
+                                "latitude": "54.600000",
+                                "longitude": "-2.000000"
+                            },
+                            "continent": {
+                                "en": "Europe"
+                            },
+                            "locationString": {
+                                "en": "Cambridge, United Kingdom",
+                                "no": "Cambridge, Storbritannia",
+                                "se": "Cambridge, Storbritannien"
+                            }
+                        }
+                    ],
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/che/1982",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/chemistry/1982/klug/facts/",
+                            "title": "Aaron Klug - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/chemistry/1982/summary/",
+                            "title": "The Nobel Prize in Chemistry 1982",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "541",
+            "knownName": {
+                "en": "Adolfo Pérez Esquivel",
+                "se": "Adolfo Pérez Esquivel"
+            },
+            "givenName": {
+                "en": "Adolfo",
+                "se": "Adolfo"
+            },
+            "familyName": {
+                "en": "Pérez Esquivel",
+                "se": "Pérez Esquivel"
+            },
+            "fullName": {
+                "en": "Adolfo Pérez Esquivel",
+                "se": "Adolfo Pérez Esquivel"
+            },
+            "fileName": "esquivel",
+            "gender": "male",
+            "birth": {
+                "date": "1931-11-26",
+                "place": {
+                    "city": {
+                        "en": "Buenos Aires",
+                        "no": "Buenos Aires",
+                        "se": "Buenos Aires"
+                    },
+                    "country": {
+                        "en": "Argentina",
+                        "no": "Argentina",
+                        "se": "Argentina"
+                    },
+                    "cityNow": {
+                        "en": "Buenos Aires",
+                        "no": "Buenos Aires",
+                        "se": "Buenos Aires",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q1486",
+                            "https://www.wikipedia.org/wiki/Buenos_Aires"
+                        ],
+                        "latitude": "-34.603443",
+                        "longitude": "-58.396729"
+                    },
+                    "countryNow": {
+                        "en": "Argentina",
+                        "no": "Argentina",
+                        "se": "Argentina",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q414"
+                        ],
+                        "latitude": "-34.000000",
+                        "longitude": "-64.000000"
+                    },
+                    "continent": {
+                        "en": "South America",
+                        "no": "Sør-Amerika",
+                        "se": "Sydamerika"
+                    },
+                    "locationString": {
+                        "en": "Buenos Aires, Argentina",
+                        "no": "Buenos Aires, Argentina",
+                        "se": "Buenos Aires, Argentina"
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Adolfo_Pérez_Esquivel",
+                "english": "https://en.wikipedia.org/wiki/Adolfo_Pérez_Esquivel"
+            },
+            "wikidata": {
+                "id": "Q206505",
+                "url": "https://www.wikidata.org/wiki/Q206505"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q206505",
+                "https://en.wikipedia.org/wiki/Adolfo_Pérez_Esquivel"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/541",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/541",
+                    "title": "Adolfo Pérez Esquivel - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "1980",
+                    "category": {
+                        "en": "Peace",
+                        "no": "Fred",
+                        "se": "Fred"
+                    },
+                    "categoryFullName": {
+                        "en": "The Nobel Peace Prize",
+                        "no": "Nobels fredspris",
+                        "se": "Nobels fredspris"
+                    },
+                    "sortOrder": "1",
+                    "portion": "1",
+                    "dateAwarded": "1980-10-27",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for being a source of inspiration to repressed people, especially in Latin America",
+                        "no": "for rollen som inspirator for undertrykte mennesker, særlig i Latin-Amerika"
+                    },
+                    "prizeAmount": 880000,
+                    "prizeAmountAdjusted": 3273415,
+                    "residences": [
+                        {
+                            "country": {
+                                "en": "Argentina",
+                                "no": "Argentina",
+                                "se": "Argentina"
+                            },
+                            "countryNow": {
+                                "en": "Argentina",
+                                "no": "Argentina",
+                                "se": "Argentina"
+                            },
+                            "continent": {
+                                "en": "South America"
+                            },
+                            "locationString": {
+                                "en": "Argentina",
+                                "no": "Argentina",
+                                "se": "Argentina"
+                            }
+                        }
+                    ],
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/pea/1980",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/peace/1980/esquivel/facts/",
+                            "title": "Adolfo Pérez Esquivel - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/peace/1980/summary/",
+                            "title": "The Nobel Peace Prize 1980",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "114",
+            "knownName": {
+                "en": "Abdus Salam",
+                "se": "Abdus Salam"
+            },
+            "givenName": {
+                "en": "Abdus",
+                "se": "Abdus"
+            },
+            "familyName": {
+                "en": "Salam",
+                "se": "Salam"
+            },
+            "fullName": {
+                "en": "Abdus Salam",
+                "se": "Abdus Salam"
+            },
+            "fileName": "salam",
+            "gender": "male",
+            "birth": {
+                "date": "1926-01-29",
+                "place": {
+                    "city": {
+                        "en": "Jhang Maghiāna",
+                        "no": "Jhang Maghiāna",
+                        "se": "Jhang Maghiāna"
+                    },
+                    "country": {
+                        "en": "India",
+                        "no": "India",
+                        "se": "Indien"
+                    },
+                    "cityNow": {
+                        "en": "Jhang Maghiāna",
+                        "no": "Jhang Maghiāna",
+                        "se": "Jhang Maghiāna",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q1026616",
+                            "https://www.wikipedia.org/wiki/Jhang"
+                        ],
+                        "latitude": "31.268056",
+                        "longitude": "72.318056"
+                    },
+                    "countryNow": {
+                        "en": "Pakistan",
+                        "no": "Pakistan",
+                        "se": "Pakistan",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q843"
+                        ],
+                        "latitude": "30.000000",
+                        "longitude": "71.000000"
+                    },
+                    "continent": {
+                        "en": "Asia",
+                        "no": "Asia",
+                        "se": "Asien"
+                    },
+                    "locationString": {
+                        "en": "Jhang Maghiāna, India (now Pakistan)",
+                        "no": "Jhang Maghiāna, India (nå Pakistan)",
+                        "se": "Jhang Maghiāna, Indien (nu Pakistan)"
+                    }
+                }
+            },
+            "death": {
+                "date": "1996-11-21",
+                "place": {
+                    "city": {
+                        "en": "Oxford",
+                        "no": "Oxford",
+                        "se": "Oxford"
+                    },
+                    "country": {
+                        "en": "United Kingdom",
+                        "no": "Storbritannia",
+                        "se": "Storbritannien",
+                        "sameAs": "https://www.wikidata.org/wiki/Q145"
+                    },
+                    "cityNow": {
+                        "en": "Oxford",
+                        "no": "Oxford",
+                        "se": "Oxford",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q34217",
+                            "https://www.wikipedia.org/wiki/Oxford"
+                        ],
+                        "latitude": "51.753363",
+                        "longitude": "-1.260979"
+                    },
+                    "countryNow": {
+                        "en": "United Kingdom",
+                        "no": "Storbritannia",
+                        "se": "Storbritannien",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q145"
+                        ],
+                        "latitude": "54.600000",
+                        "longitude": "-2.000000"
+                    },
+                    "continent": {
+                        "en": "Europe",
+                        "no": "Europa",
+                        "se": "Europa"
+                    },
+                    "locationString": {
+                        "en": "Oxford, United Kingdom",
+                        "no": "Oxford, Storbritannia",
+                        "se": "Oxford, Storbritannien"
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Abdus_Salam",
+                "english": "https://en.wikipedia.org/wiki/Abdus_Salam"
+            },
+            "wikidata": {
+                "id": "Q28189",
+                "url": "https://www.wikidata.org/wiki/Q28189"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q28189",
+                "https://en.wikipedia.org/wiki/Abdus_Salam"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/114",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/114",
+                    "title": "Abdus Salam - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "1979",
+                    "category": {
+                        "en": "Physics",
+                        "no": "Fysikk",
+                        "se": "Fysik"
+                    },
+                    "categoryFullName": {
+                        "en": "The Nobel Prize in Physics",
+                        "no": "Nobelprisen i fysikk",
+                        "se": "Nobelpriset i fysik"
+                    },
+                    "sortOrder": "2",
+                    "portion": "1/3",
+                    "dateAwarded": "1979-10-15",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for their contributions to the theory of the unified weak and electromagnetic interaction between elementary particles, including, inter alia, the prediction of the weak neutral current",
+                        "se": "för deras insatser inom teorin för förenad svag och elektromagnetisk växelverkan mellan elementar partiklar, innefattande bl.a. förutsägelsen av den svaga neutrala strömmen"
+                    },
+                    "prizeAmount": 800000,
+                    "prizeAmountAdjusted": 3384861,
+                    "affiliations": [
+                        {
+                            "name": {
+                                "en": "International Centre for Theoretical Physics",
+                                "no": "International Centre for Theoretical Physics",
+                                "se": "International Centre for Theoretical Physics"
+                            },
+                            "nameNow": {
+                                "en": "International Centre for Theoretical Physics"
+                            },
+                            "city": {
+                                "en": "Trieste",
+                                "no": "Trieste",
+                                "se": "Trieste"
+                            },
+                            "country": {
+                                "en": "Italy",
+                                "no": "Italia",
+                                "se": "Italien"
+                            },
+                            "cityNow": {
+                                "en": "Trieste",
+                                "no": "Trieste",
+                                "se": "Trieste",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q546",
+                                    "https://www.wikipedia.org/wiki/Trieste"
+                                ],
+                                "latitude": "45.649433",
+                                "longitude": "13.776623"
+                            },
+                            "countryNow": {
+                                "en": "Italy",
+                                "no": "Italia",
+                                "se": "Italien",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q38"
+                                ],
+                                "latitude": "42.500000",
+                                "longitude": "12.500000"
+                            },
+                            "continent": {
+                                "en": "Europe"
+                            },
+                            "locationString": {
+                                "en": "Trieste, Italy",
+                                "no": "Trieste, Italia",
+                                "se": "Trieste, Italien"
+                            }
+                        },
+                        {
+                            "name": {
+                                "en": "Imperial College",
+                                "no": "Imperial College",
+                                "se": "Imperial College"
+                            },
+                            "nameNow": {
+                                "en": "Imperial College"
+                            },
+                            "city": {
+                                "en": "London",
+                                "no": "London",
+                                "se": "London"
+                            },
+                            "country": {
+                                "en": "United Kingdom",
+                                "no": "Storbritannia",
+                                "se": "Storbritannien"
+                            },
+                            "cityNow": {
+                                "en": "London",
+                                "no": "London",
+                                "se": "London",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q84",
+                                    "https://www.wikipedia.org/wiki/London"
+                                ],
+                                "latitude": "51.510235",
+                                "longitude": "-0.120852"
+                            },
+                            "countryNow": {
+                                "en": "United Kingdom",
+                                "no": "Storbritannia",
+                                "se": "Storbritannien",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q145"
+                                ],
+                                "latitude": "54.600000",
+                                "longitude": "-2.000000"
+                            },
+                            "continent": {
+                                "en": "Europe"
+                            },
+                            "locationString": {
+                                "en": "London, United Kingdom",
+                                "no": "London, Storbritannia",
+                                "se": "London, Storbritannien"
+                            }
+                        }
+                    ],
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/phy/1979",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/physics/1979/salam/facts/",
+                            "title": "Abdus Salam - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/physics/1979/summary/",
+                            "title": "The Nobel Prize in Physics 1979",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "102",
+            "knownName": {
+                "en": "Aage N. Bohr",
+                "se": "Aage N. Bohr"
+            },
+            "givenName": {
+                "en": "Aage N.",
+                "se": "Aage N."
+            },
+            "familyName": {
+                "en": "Bohr",
+                "se": "Bohr"
+            },
+            "fullName": {
+                "en": "Aage Niels Bohr",
+                "se": "Aage Niels Bohr"
+            },
+            "fileName": "bohr",
+            "gender": "male",
+            "birth": {
+                "date": "1922-06-19",
+                "place": {
+                    "city": {
+                        "en": "Copenhagen",
+                        "no": "København",
+                        "se": "Köpenhamn"
+                    },
+                    "country": {
+                        "en": "Denmark",
+                        "no": "Danmark",
+                        "se": "Danmark"
+                    },
+                    "cityNow": {
+                        "en": "Copenhagen",
+                        "no": "København",
+                        "se": "Köpenhamn",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q1748",
+                            "https://www.wikipedia.org/wiki/Copenhagen"
+                        ],
+                        "latitude": "55.678127",
+                        "longitude": "12.572532"
+                    },
+                    "countryNow": {
+                        "en": "Denmark",
+                        "no": "Danmark",
+                        "se": "Danmark",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q35"
+                        ],
+                        "latitude": "56.000000",
+                        "longitude": "10.000000"
+                    },
+                    "continent": {
+                        "en": "Europe",
+                        "no": "Europa",
+                        "se": "Europa"
+                    },
+                    "locationString": {
+                        "en": "Copenhagen, Denmark",
+                        "no": "København, Danmark",
+                        "se": "Köpenhamn, Danmark"
+                    }
+                }
+            },
+            "death": {
+                "date": "2009-09-08",
+                "place": {
+                    "city": {
+                        "en": "Copenhagen",
+                        "no": "København",
+                        "se": "Köpenhamn"
+                    },
+                    "country": {
+                        "en": "Denmark",
+                        "no": "Danmark",
+                        "se": "Danmark",
+                        "sameAs": "https://www.wikidata.org/wiki/Q35"
+                    },
+                    "cityNow": {
+                        "en": "Copenhagen",
+                        "no": "København",
+                        "se": "Köpenhamn",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q1748",
+                            "https://www.wikipedia.org/wiki/Copenhagen"
+                        ],
+                        "latitude": "55.678127",
+                        "longitude": "12.572532"
+                    },
+                    "countryNow": {
+                        "en": "Denmark",
+                        "no": "Danmark",
+                        "se": "Danmark",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q35"
+                        ],
+                        "latitude": "56.000000",
+                        "longitude": "10.000000"
+                    },
+                    "continent": {
+                        "en": "Europe",
+                        "no": "Europa",
+                        "se": "Europa"
+                    },
+                    "locationString": {
+                        "en": "Copenhagen, Denmark",
+                        "no": "København, Danmark",
+                        "se": "Köpenhamn, Danmark"
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Aage_Bohr",
+                "english": "https://en.wikipedia.org/wiki/Aage_Bohr"
+            },
+            "wikidata": {
+                "id": "Q103854",
+                "url": "https://www.wikidata.org/wiki/Q103854"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q103854",
+                "https://en.wikipedia.org/wiki/Aage_Bohr"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/102",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/102",
+                    "title": "Aage N. Bohr - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "1975",
+                    "category": {
+                        "en": "Physics",
+                        "no": "Fysikk",
+                        "se": "Fysik"
+                    },
+                    "categoryFullName": {
+                        "en": "The Nobel Prize in Physics",
+                        "no": "Nobelprisen i fysikk",
+                        "se": "Nobelpriset i fysik"
+                    },
+                    "sortOrder": "1",
+                    "portion": "1/3",
+                    "dateAwarded": "1975-10-17",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for the discovery of the connection between collective motion and particle motion in atomic nuclei and the development of the theory of the structure of the atomic nucleus based on this connection",
+                        "se": "för upptäckten av sambandet mellan kollektiva rörelser och partikelrörelser i atomkärnor, samt den därpå baserade utvecklingen av teorien för atomkärnans struktur"
+                    },
+                    "prizeAmount": 630000,
+                    "prizeAmountAdjusted": 3856254,
+                    "affiliations": [
+                        {
+                            "name": {
+                                "en": "Niels Bohr Institute",
+                                "no": "Niels Bohr Institute",
+                                "se": "Niels Bohr Institute"
+                            },
+                            "nameNow": {
+                                "en": "Niels Bohr Institute"
+                            },
+                            "city": {
+                                "en": "Copenhagen",
+                                "no": "København",
+                                "se": "Köpenhamn"
+                            },
+                            "country": {
+                                "en": "Denmark",
+                                "no": "Danmark",
+                                "se": "Danmark"
+                            },
+                            "cityNow": {
+                                "en": "Copenhagen",
+                                "no": "København",
+                                "se": "Köpenhamn",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q1748",
+                                    "https://www.wikipedia.org/wiki/Copenhagen"
+                                ],
+                                "latitude": "55.678127",
+                                "longitude": "12.572532"
+                            },
+                            "countryNow": {
+                                "en": "Denmark",
+                                "no": "Danmark",
+                                "se": "Danmark",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q35"
+                                ],
+                                "latitude": "56.000000",
+                                "longitude": "10.000000"
+                            },
+                            "continent": {
+                                "en": "Europe"
+                            },
+                            "locationString": {
+                                "en": "Copenhagen, Denmark",
+                                "no": "København, Danmark",
+                                "se": "Köpenhamn, Danmark"
+                            }
+                        }
+                    ],
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/phy/1975",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/physics/1975/bohr/facts/",
+                            "title": "Aage N. Bohr - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/physics/1975/summary/",
+                            "title": "The Nobel Prize in Physics 1975",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "403",
+            "knownName": {
+                "en": "Albert Claude",
+                "se": "Albert Claude"
+            },
+            "givenName": {
+                "en": "Albert",
+                "se": "Albert"
+            },
+            "familyName": {
+                "en": "Claude",
+                "se": "Claude"
+            },
+            "fullName": {
+                "en": "Albert Claude",
+                "se": "Albert Claude"
+            },
+            "fileName": "claude",
+            "gender": "male",
+            "birth": {
+                "date": "1898-08-24",
+                "place": {
+                    "city": {
+                        "en": "Longlier",
+                        "no": "Longlier",
+                        "se": "Longlier"
+                    },
+                    "country": {
+                        "en": "Belgium",
+                        "no": "Belgia",
+                        "se": "Belgien"
+                    },
+                    "cityNow": {
+                        "en": "Longlier",
+                        "no": "Longlier",
+                        "se": "Longlier"
+                    },
+                    "countryNow": {
+                        "en": "Belgium",
+                        "no": "Belgia",
+                        "se": "Belgien",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q31"
+                        ],
+                        "latitude": "50.641111",
+                        "longitude": "4.668056"
+                    },
+                    "continent": {
+                        "en": "Europe",
+                        "no": "Europa",
+                        "se": "Europa"
+                    },
+                    "locationString": {
+                        "en": "Longlier, Belgium",
+                        "no": "Longlier, Belgia",
+                        "se": "Longlier, Belgien"
+                    }
+                }
+            },
+            "death": {
+                "date": "1983-05-22",
+                "place": {
+                    "city": {
+                        "en": "Brussels",
+                        "no": "Brussel",
+                        "se": "Bryssel"
+                    },
+                    "country": {
+                        "en": "Belgium",
+                        "no": "Belgia",
+                        "se": "Belgien",
+                        "sameAs": "https://www.wikidata.org/wiki/Q31"
+                    },
+                    "cityNow": {
+                        "en": "Brussels",
+                        "no": "Brussel",
+                        "se": "Bryssel",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q239",
+                            "https://www.wikipedia.org/wiki/City_of_Brussels"
+                        ],
+                        "latitude": "50.849243",
+                        "longitude": "4.354815"
+                    },
+                    "countryNow": {
+                        "en": "Belgium",
+                        "no": "Belgia",
+                        "se": "Belgien",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q31"
+                        ],
+                        "latitude": "50.641111",
+                        "longitude": "4.668056"
+                    },
+                    "continent": {
+                        "en": "Europe",
+                        "no": "Europa",
+                        "se": "Europa"
+                    },
+                    "locationString": {
+                        "en": "Brussels, Belgium",
+                        "no": "Brussel, Belgia",
+                        "se": "Bryssel, Belgien"
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Albert_Claude",
+                "english": "https://en.wikipedia.org/wiki/Albert_Claude"
+            },
+            "wikidata": {
+                "id": "Q233943",
+                "url": "https://www.wikidata.org/wiki/Q233943"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q233943",
+                "https://en.wikipedia.org/wiki/Albert_Claude"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/403",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/403",
+                    "title": "Albert Claude - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "1974",
+                    "category": {
+                        "en": "Physiology or Medicine",
+                        "no": "Fysiologi eller medisin",
+                        "se": "Fysiologi eller medicin"
+                    },
+                    "categoryFullName": {
+                        "en": "The Nobel Prize in Physiology or Medicine",
+                        "no": "Nobelprisen i fysiologi eller medisin",
+                        "se": "Nobelpriset i fysiologi eller medicin"
+                    },
+                    "sortOrder": "1",
+                    "portion": "1/3",
+                    "dateAwarded": "1974-10-10",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "for their discoveries concerning the structural and functional organization of the cell",
+                        "se": "för deras upptäckter rörande cellens strukturella och funktionella organisation"
+                    },
+                    "prizeAmount": 550000,
+                    "prizeAmountAdjusted": 3696835,
+                    "affiliations": [
+                        {
+                            "name": {
+                                "en": "Université Catholique de Louvain",
+                                "no": "Université Catholique de Louvain",
+                                "se": "Université Catholique de Louvain"
+                            },
+                            "nameNow": {
+                                "en": "Université Catholique de Louvain"
+                            },
+                            "city": {
+                                "en": "Louvain",
+                                "no": "Louvain",
+                                "se": "Louvain"
+                            },
+                            "country": {
+                                "en": "Belgium",
+                                "no": "Belgia",
+                                "se": "Belgien"
+                            },
+                            "cityNow": {
+                                "en": "Louvain",
+                                "no": "Louvain",
+                                "se": "Louvain",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q118958",
+                                    "https://www.wikipedia.org/wiki/Leuven"
+                                ],
+                                "latitude": "50.883029",
+                                "longitude": "4.713949"
+                            },
+                            "countryNow": {
+                                "en": "Belgium",
+                                "no": "Belgia",
+                                "se": "Belgien",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q31"
+                                ],
+                                "latitude": "50.641111",
+                                "longitude": "4.668056"
+                            },
+                            "continent": {
+                                "en": "Europe"
+                            },
+                            "locationString": {
+                                "en": "Louvain, Belgium",
+                                "no": "Louvain, Belgia",
+                                "se": "Louvain, Belgien"
+                            }
+                        }
+                    ],
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/med/1974",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/medicine/1974/claude/facts/",
+                            "title": "Albert Claude - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/medicine/1974/summary/",
+                            "title": "The Nobel Prize in Physiology or Medicine 1974",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "164",
+            "knownName": {
+                "en": "Adolf von Baeyer",
+                "se": "Adolf von Baeyer"
+            },
+            "givenName": {
+                "en": "Adolf",
+                "se": "Adolf"
+            },
+            "familyName": {
+                "en": "von Baeyer",
+                "se": "von Baeyer"
+            },
+            "fullName": {
+                "en": "Johann Friedrich Wilhelm Adolf von Baeyer",
+                "se": "Johann Friedrich Wilhelm Adolf von Baeyer"
+            },
+            "fileName": "baeyer",
+            "gender": "male",
+            "birth": {
+                "date": "1835-10-31",
+                "place": {
+                    "city": {
+                        "en": "Berlin",
+                        "no": "Berlin",
+                        "se": "Berlin"
+                    },
+                    "country": {
+                        "en": "Prussia",
+                        "no": "Preussen",
+                        "se": "Preussen"
+                    },
+                    "cityNow": {
+                        "en": "Berlin",
+                        "no": "Berlin",
+                        "se": "Berlin",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q64",
+                            "https://www.wikipedia.org/wiki/Berlin"
+                        ],
+                        "latitude": "52.522265",
+                        "longitude": "13.406852"
+                    },
+                    "countryNow": {
+                        "en": "Germany",
+                        "no": "Tyskland",
+                        "se": "Tyskland",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q183"
+                        ],
+                        "latitude": "51.000000",
+                        "longitude": "10.000000"
+                    },
+                    "continent": {
+                        "en": "Europe",
+                        "no": "Europa",
+                        "se": "Europa"
+                    },
+                    "locationString": {
+                        "en": "Berlin, Prussia (now Germany)",
+                        "no": "Berlin, Preussen (nå Tyskland)",
+                        "se": "Berlin, Preussen (nu Tyskland)"
+                    }
+                }
+            },
+            "death": {
+                "date": "1917-08-20",
+                "place": {
+                    "city": {
+                        "en": "Starnberg",
+                        "no": "Starnberg",
+                        "se": "Starnberg"
+                    },
+                    "country": {
+                        "en": "Germany",
+                        "no": "Tyskland",
+                        "se": "Tyskland",
+                        "sameAs": "https://www.wikidata.org/wiki/Q183"
+                    },
+                    "cityNow": {
+                        "en": "Starnberg",
+                        "no": "Starnberg",
+                        "se": "Starnberg",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q61936",
+                            "https://www.wikipedia.org/wiki/Starnberg"
+                        ],
+                        "latitude": "48.000536",
+                        "longitude": "11.342857"
+                    },
+                    "countryNow": {
+                        "en": "Germany",
+                        "no": "Tyskland",
+                        "se": "Tyskland",
+                        "sameAs": [
+                            "https://www.wikidata.org/wiki/Q183"
+                        ],
+                        "latitude": "51.000000",
+                        "longitude": "10.000000"
+                    },
+                    "continent": {
+                        "en": "Europe",
+                        "no": "Europa",
+                        "se": "Europa"
+                    },
+                    "locationString": {
+                        "en": "Starnberg, Germany",
+                        "no": "Starnberg, Tyskland",
+                        "se": "Starnberg, Tyskland"
+                    }
+                }
+            },
+            "wikipedia": {
+                "slug": "Adolf_von_Baeyer",
+                "english": "https://en.wikipedia.org/wiki/Adolf_von_Baeyer"
+            },
+            "wikidata": {
+                "id": "Q57078",
+                "url": "https://www.wikidata.org/wiki/Q57078"
+            },
+            "sameAs": [
+                "https://www.wikidata.org/wiki/Q57078",
+                "https://en.wikipedia.org/wiki/Adolf_von_Baeyer"
+            ],
+            "links": [
+                {
+                    "rel": "laureate",
+                    "href": "https://api.nobelprize.org/2/laureate/164",
+                    "action": "GET",
+                    "types": "application/json"
+                },
+                {
+                    "rel": "external",
+                    "href": "https://www.nobelprize.org/laureate/164",
+                    "title": "Adolf von Baeyer - Facts",
+                    "action": "GET",
+                    "types": "text/html",
+                    "class": [
+                        "laureate facts"
+                    ]
+                }
+            ],
+            "nobelPrizes": [
+                {
+                    "awardYear": "1905",
+                    "category": {
+                        "en": "Chemistry",
+                        "no": "Kjemi",
+                        "se": "Kemi"
+                    },
+                    "categoryFullName": {
+                        "en": "The Nobel Prize in Chemistry",
+                        "no": "Nobelprisen i kjemi",
+                        "se": "Nobelpriset i kemi"
+                    },
+                    "sortOrder": "1",
+                    "portion": "1",
+                    "prizeStatus": "received",
+                    "motivation": {
+                        "en": "in recognition of his services in the advancement of organic chemistry and the chemical industry, through his work on organic dyes and hydroaromatic compounds",
+                        "se": "såsom ett erkännande av den förtjänst han inlagt om den organiska kemiens och den kemiska industriens utveckling genom sina arbeten rörande organiska färgämnen och hydroaromatiska föreningar"
+                    },
+                    "prizeAmount": 138089,
+                    "prizeAmountAdjusted": 8626501,
+                    "affiliations": [
+                        {
+                            "name": {
+                                "en": "Munich University",
+                                "no": "Munich University",
+                                "se": "Munich University"
+                            },
+                            "nameNow": {
+                                "en": "Munich University"
+                            },
+                            "city": {
+                                "en": "Munich",
+                                "no": "München",
+                                "se": "München"
+                            },
+                            "country": {
+                                "en": "Germany",
+                                "no": "Tyskland",
+                                "se": "Tyskland"
+                            },
+                            "cityNow": {
+                                "en": "Munich",
+                                "no": "München",
+                                "se": "München",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q1726",
+                                    "https://www.wikipedia.org/wiki/Munich"
+                                ],
+                                "latitude": "48.134703",
+                                "longitude": "11.581995"
+                            },
+                            "countryNow": {
+                                "en": "Germany",
+                                "no": "Tyskland",
+                                "se": "Tyskland",
+                                "sameAs": [
+                                    "https://www.wikidata.org/wiki/Q183"
+                                ],
+                                "latitude": "51.000000",
+                                "longitude": "10.000000"
+                            },
+                            "continent": {
+                                "en": "Europe"
+                            },
+                            "locationString": {
+                                "en": "Munich, Germany",
+                                "no": "München, Tyskland",
+                                "se": "München, Tyskland"
+                            }
+                        }
+                    ],
+                    "links": [
+                        {
+                            "rel": "nobelPrize",
+                            "href": "https://api.nobelprize.org/2/nobelPrize/che/1905",
+                            "action": "GET",
+                            "types": "application/json"
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/chemistry/1905/baeyer/facts/",
+                            "title": "Adolf von Baeyer - Facts",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "laureate facts"
+                            ]
+                        },
+                        {
+                            "rel": "external",
+                            "href": "https://www.nobelprize.org/prizes/chemistry/1905/summary/",
+                            "title": "The Nobel Prize in Chemistry 1905",
+                            "action": "GET",
+                            "types": "text/html",
+                            "class": [
+                                "prize summary"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

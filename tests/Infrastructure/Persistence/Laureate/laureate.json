@@ -1,0 +1,49 @@
+{
+    "laureates": [
+        {
+            "id": "102",
+            "fullName": {
+                "en": "Aage Niels Bohr",
+                "se": "Aage Niels Bohr"
+            },
+            "birth": {
+                "date": "1922-06-19",
+                "place": {
+                    "country": {
+                        "en": "Denmark",
+                        "no": "Danmark",
+                        "se": "Danmark"
+                    }
+                }
+            },
+            "nobelPrizes": [
+                {
+                    "awardYear": "1975",
+                    "category": {
+                        "en": "Physics",
+                        "no": "Fysikk",
+                        "se": "Fysik"
+                    },
+                    "dateAwarded": "1975-10-17"
+                },
+                {
+                    "category": {
+                        "en": "Something fake",
+                        "no": "Någet falskt",
+                        "se": "Något falskt"
+                    },
+                    "dateAwarded": "2020-10-17"
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "offset": 0,
+        "limit": 25,
+        "id": 102,
+        "count": 1,
+        "terms": "https://www.nobelprize.org/about/terms-of-use-for-api-nobelprize-org-and-data-nobelprize-org/",
+        "license": "https://www.nobelprize.org/about/terms-of-use-for-api-nobelprize-org-and-data-nobelprize-org/#licence",
+        "disclaimer": "https://www.nobelprize.org/about/terms-of-use-for-api-nobelprize-org-and-data-nobelprize-org/#disclaimer"
+    }
+}
