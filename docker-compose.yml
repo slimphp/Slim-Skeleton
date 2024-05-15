@@ -6,9 +6,10 @@ volumes:
 
 services:
     slim:
-        image: php:8-alpine
+        build: 
+            context: .
+            dockerfile: docker/php/Dockerfile
         working_dir: /var/www
-        command: php -S 0.0.0.0:8080 -t public
         environment:
             docker: "true"
         ports:
@@ -16,3 +17,8 @@ services:
         volumes:
             - .:/var/www
             - logs:/var/www/logs
+        command: |
+            sh -c "
+                composer install --no-interaction --no-plugins --no-scripts
+                php -S 0.0.0.0:8080 -t public
+            "
