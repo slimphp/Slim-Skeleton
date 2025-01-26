@@ -5,6 +5,7 @@ declare(strict_types=1);
 use App\Application\Settings\Settings;
 use App\Application\Settings\SettingsInterface;
 use DI\ContainerBuilder;
+use Monolog\Level;
 use Monolog\Logger;
 
 return function (ContainerBuilder $containerBuilder) {
@@ -19,7 +20,7 @@ return function (ContainerBuilder $containerBuilder) {
                 'logger' => [
                     'name' => 'slim-app',
                     'path' => isset($_ENV['docker']) ? 'php://stdout' : __DIR__ . '/../logs/app.log',
-                    'level' => Logger::DEBUG,
+                    'level' => Level::fromName('DEBUG'),
                 ],
             ]);
         }

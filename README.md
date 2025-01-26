@@ -8,7 +8,7 @@ This skeleton application was built for Composer. This makes setting up a new Sl
 
 ## Install the Application
 
-Run this command from the directory in which you want to install your new Slim Framework application. You will require PHP 7.4 or newer.
+Run this command from the directory in which you want to install your new Slim Framework application. You will require PHP 8.3 or newer.
 
 ```bash
 composer create-project slim/slim-skeleton [my-app-name]
