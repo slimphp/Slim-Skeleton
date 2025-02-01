@@ -27,7 +27,7 @@
         "monolog/monolog": "^2.9",
         "php-di/php-di": "^6.4",
         "slim/psr7": "^1.6",
-        "slim/slim": "^4.12"
+        "slim/slim": "^4.14"
     },
     "require-dev": {
         "jangregor/phpstan-prophecy": "^1.0.0",
